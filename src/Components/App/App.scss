@@ -1,3 +1,10 @@
+@import '../Card/Card.scss';
+@import '../Favorites/Favorites.scss';
+@import '../Landing/Landing.scss';
+@import '../People/People.scss';
+@import '../Planets/Planets.scss';
+@import '../Vehicles/Vehicles.scss';
+
 .App {
   text-align: center;
 }
@@ -22,7 +29,3 @@
   font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
