@@ -1,12 +1,59 @@
 import React, { Component } from 'react';
 import './App.css';
+import Navigation from '../Navigation/Navigation.js';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      selectedButton: '',
+      selectedData: {}
+    }
+  }
+
+  changeCategory = (event) => {
+    const buttonName = event.target.name;
+    if (buttonName === 'people') {
+      this.getPeopleData();
+    } else if (buttonName === 'planets') {
+      this.getPlanetsData();
+    } else if (buttonName === 'vehicles') {
+      this.getVehiclesData();
+    } else if (buttonName === 'favorites') {
+      this.getFavoritesData();
+    }
+
+    this.changeSelectedButton(buttonName);
+  }
+
+  changeSelectedButton = (selectedButton) => {
+    this.setState({ selectedButton });
+  }
+
+  getPeopleData = () => {
+
+  }
+
+  getPlanetsData = () => {
+
+  }
+
+  getVehiclesData = () => {
+
+  }
+
+  getFavoritesData = () => {
+
+  }
+
+
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <h1 className="App-title">SWAPIbox</h1>
+          <h1 className="App-title">swapi box</h1>
+          <Navigation changeCategory={ this.changeCategory }/>
         </header>
       </div>
     );
