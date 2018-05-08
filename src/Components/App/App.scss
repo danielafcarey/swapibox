@@ -1,31 +1,22 @@
-@import '../Card/Card.scss';
-@import '../Favorites/Favorites.scss';
+@import '../Navigation/Navigation.scss';
 @import '../Landing/Landing.scss';
 @import '../People/People.scss';
 @import '../Planets/Planets.scss';
 @import '../Vehicles/Vehicles.scss';
+@import '../Favorites/Favorites.scss';
+@import '../Card/Card.scss';
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+@font-face {
+  font-family: starWarsOutlined;
+  src: url(../../Starjhol.ttf);
 }
 
 .App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+  display: inline-block;
+  color: white;
+  font-family: starWarsOutlined;
+  font-size: 4rem;
+  margin: 0 20px;
+  line-height: 5rem;
 }
 
