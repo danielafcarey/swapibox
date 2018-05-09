@@ -1,7 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+
 import Navigation from '../Navigation/Navigation.js';
 import Landing from '../Landing/Landing.js';
+import People from '../People/People.js';
+import Planets from '../Planets/Planets.js';
+import Vehicles from '../Vehicles/Vehicles.js';
+import Favorites from '../Favorites/Favorites.js';
+
 import ApiHelper from '../../Api.js';
 const apiHelper = new ApiHelper();
 
@@ -23,13 +29,13 @@ class App extends Component {
 
   changeCategory = (event) => {
     const buttonName = event.target.name;
-    if (buttonName === 'people') {
+    if (buttonName === 'People') {
       this.getPeopleData();
-    } else if (buttonName === 'planets') {
+    } else if (buttonName === 'Planets') {
       this.getPlanetsData();
-    } else if (buttonName === 'vehicles') {
+    } else if (buttonName === 'Vehicles') {
       this.getVehiclesData();
-    } else if (buttonName === 'favorites') {
+    } else if (buttonName === 'Favorites') {
       this.getFavoritesData();
     }
 
@@ -59,12 +65,33 @@ class App extends Component {
     this.changeDataState(vehiclesData);
   }
 
-  getFavoritesData = async () => {
-    const favoritesData = await apiHelper.getFavoritesData();
-    this.changeDataState(favoritesData);
+  getFavoritesData = () => {
+
   }
 
+  getDisplayElements = () => {
+    if (!this.state.selectedButton) {
+      return <Landing crawlData={ this.state.crawlData }/> 
+    } else {
+      return this.getCardsDisplay();        
+    }
+  }
 
+  getCardsDisplay = () => {
+    const { selectedButton, selectedData } = this.state;
+    // per React docs: https://reactjs.org/docs/jsx-in-depth.html
+    // const CardsDisplay = selectedButton; 
+    // return <CardsDisplay cardData={ selectedData } />
+    if (selectedButton === 'People') {
+      return <People cardData={ selectedData } />;
+    } else if (selectedButton === 'Planets') {
+      return <Planets cardData={ selectedData } />;
+    } else if (selectedButton === 'Vehicles') {
+      return <Vehicles cardData={ selectedData } />;
+    } else if (selectedButton === 'Favorites') {
+      return <Favorites cardData={ selectedData } />;
+    }
+  }
 
   render() {
     return (
@@ -75,7 +102,7 @@ class App extends Component {
             changeCategory={ this.changeCategory }
             selectedButton={ this.state.selectedButton }/>
         </header>
-        {/* <Landing crawlData={ this.state.crawlData }/> */} 
+        { this.getDisplayElements() } 
       </div>
     );
   }
