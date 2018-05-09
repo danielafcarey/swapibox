@@ -41,23 +41,27 @@ class App extends Component {
   }
 
   changeDataState = (data) => {
-    this.setState({ selectedData: data })
+    this.setState({ selectedData: data });
   }
 
-  getPeopleData = () => {
-
+  getPeopleData = async () => {
+    const peopleData = await apiHelper.getPeopleData();
+    this.changeDataState(peopleData);
   }
 
-  getPlanetsData = () => {
-
+  getPlanetsData = async () => {
+    const planetsData = await apiHelper.getPlanetsData();
+    this.changeDataState(planetsData);
   }
 
-  getVehiclesData = () => {
-
+  getVehiclesData = async () => {
+    const vehiclesData = await apiHelper.getVehiclesData();
+    this.changeDataState(vehiclesData);
   }
 
-  getFavoritesData = () => {
-
+  getFavoritesData = async () => {
+    const favoritesData = await apiHelper.getFavoritesData();
+    this.changeDataState(favoritesData);
   }
 
 

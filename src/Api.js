@@ -30,27 +30,42 @@ export default class ApiHelper {
   getPeopleData = async () => {
     const response = await fetch(this.peopleUrl);
     const data = await response.json();
-    const peopleData = await this.createPeopleData(data);
+    const peopleData = await this.createPeopleData(data.results);
 
     return peopleData;
   }
 
-  createPeopleData = (data) => {
-    data.results.map( async (person) => {
-            
+  createPeopleData = (people) => {
+    const peoplePromises = people.map( async (person) => {
+      const name = person.name;
+      const species = await this.getSpeciesData(person.species);
+      const homeworldInfo = await this.getPersonPlanetData(person.homeworld);
+
+      return { ...homeworldInfo, name, species };
     })
-    // Name - in person.name
-    // Species - array - fetch from this.speciesUrl
-    // Homeworld - fetch from this.planetsUrl
-    // Population of Homeworld - fetch from this.planetsUrl
+
+    return Promise.all(peoplePromises);
   }
 
-  getPersonSpeciesData = async (speciesUrl) => {
+  getSpeciesData = (speciesUrlList) => {
+    const speciesList = speciesUrlList.map( async (speciesUrl) => {
+      const response = await fetch(speciesUrl);
+      const data = await response.json();
+      const speciesName = data.name;
 
+      return speciesName;
+    })
+
+    return Promise.all(speciesList);
   }
 
   getPersonPlanetData = async (planetUrl) => {
+    const response = await fetch(planetUrl);
+    const data = await response.json();
+    const homeworld = data.name;
+    const homeworldPop = data.population;
 
+    return { homeworld, homeworldPop } 
   }
 
   getPlanetsData = async () => {
