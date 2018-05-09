@@ -70,7 +70,7 @@ class App extends Component {
   }
 
   getDisplayElements = () => {
-    if (!this.state.selectedButton) {
+    if (Object.keys(this.state.selectedData).length === 0) {
       return <Landing crawlData={ this.state.crawlData }/> 
     } else {
       return this.getCardsDisplay();        
