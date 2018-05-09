@@ -1,6 +1,9 @@
 import React from 'react';
 
-const Navigation = ({ changeCategory }) => {
+const Navigation = ({ selectedButton, changeCategory }) => {
+  let showSelectMessage;
+  selectedButton ? showSelectMessage = 'hide' : showSelectMessage = 'showSelectMessage'
+
   return (
     <div className='Navigation'>
       <button 
@@ -23,6 +26,7 @@ const Navigation = ({ changeCategory }) => {
         name='favorites'
         onClick={ changeCategory }  
       >Favorites</button>
+      <h3 className={ showSelectMessage }>Select a category</h3>
     </div>
   );
 }

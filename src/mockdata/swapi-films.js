@@ -1,4 +1,4 @@
-export default mockFilmData = {
+const mockFilmData = {
     "count": 7,
     "next": null,
     "previous": null,
@@ -540,3 +540,5 @@ export default mockFilmData = {
         }
     ]
 }
+
+export { mockFilmData };

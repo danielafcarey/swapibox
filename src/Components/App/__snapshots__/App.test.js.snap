@@ -17,45 +17,80 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
-      "children": <header
-        className="App-header"
+      "children": Array [
+        <header
+          className="App-header"
 >
-        <h1
-                className="App-title"
-        >
-                swapi box
-        </h1>
+          <h1
+                    className="App-title"
+          >
+                    swapi box
+          </h1>
+          <Navigation
+                    changeCategory={[Function]}
+          />
 </header>,
+        <Landing />,
+      ],
       "className": "App",
     },
     "ref": null,
-    "rendered": Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": <h1
-          className="App-title"
->
-          swapi box
-</h1>,
-        "className": "App-header",
-      },
-      "ref": null,
-      "rendered": Object {
+    "rendered": Array [
+      Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "swapi box",
-          "className": "App-title",
+          "children": Array [
+            <h1
+              className="App-title"
+>
+              swapi box
+</h1>,
+            <Navigation
+              changeCategory={[Function]}
+/>,
+          ],
+          "className": "App-header",
         },
         "ref": null,
-        "rendered": "swapi box",
-        "type": "h1",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "swapi box",
+              "className": "App-title",
+            },
+            "ref": null,
+            "rendered": "swapi box",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "changeCategory": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
       },
-      "type": "header",
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -64,45 +99,80 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
-        "children": <header
-          className="App-header"
+        "children": Array [
+          <header
+            className="App-header"
 >
-          <h1
-                    className="App-title"
-          >
-                    swapi box
-          </h1>
+            <h1
+                        className="App-title"
+            >
+                        swapi box
+            </h1>
+            <Navigation
+                        changeCategory={[Function]}
+            />
 </header>,
+          <Landing />,
+        ],
         "className": "App",
       },
       "ref": null,
-      "rendered": Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": <h1
-            className="App-title"
->
-            swapi box
-</h1>,
-          "className": "App-header",
-        },
-        "ref": null,
-        "rendered": Object {
+      "rendered": Array [
+        Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "swapi box",
-            "className": "App-title",
+            "children": Array [
+              <h1
+                className="App-title"
+>
+                swapi box
+</h1>,
+              <Navigation
+                changeCategory={[Function]}
+/>,
+            ],
+            "className": "App-header",
           },
           "ref": null,
-          "rendered": "swapi box",
-          "type": "h1",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "swapi box",
+                "className": "App-title",
+              },
+              "ref": null,
+              "rendered": "swapi box",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "changeCategory": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
         },
-        "type": "header",
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {},
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
       "type": "div",
     },
   ],
