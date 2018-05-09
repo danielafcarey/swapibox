@@ -47,8 +47,8 @@ export default class ApiHelper {
     return Promise.all(peoplePromises);
   }
 
-  getSpeciesData = (speciesUrlList) => {
-    const speciesList = speciesUrlList.map( async (speciesUrl) => {
+  getSpeciesData = (speciesUrls) => {
+    const species = speciesUrls.map( async (speciesUrl) => {
       const response = await fetch(speciesUrl);
       const data = await response.json();
       const speciesName = data.name;
@@ -56,7 +56,7 @@ export default class ApiHelper {
       return speciesName;
     })
 
-    return Promise.all(speciesList);
+    return Promise.all(species);
   }
 
   getPersonPlanetData = async (planetUrl) => {
@@ -69,7 +69,37 @@ export default class ApiHelper {
   }
 
   getPlanetsData = async () => {
+    const response = await fetch(this.planetsUrl);
+    const data = await response.json();
+    const planetsData = await this.createPlanetsData(data.results);
 
+    return planetsData;
+  }
+
+  createPlanetsData = (planets) => {
+    const planetsPromises = planets.map( async (planet) => {
+      const name = planet.name;
+      const terrain = planet.terrain;
+      const population = planet.population;
+      const climate = planet.climate;
+      const residents = await this.getPlanetResidents(planet.residents);
+
+      return { name, terrain, population, climate, residents };
+    })
+
+    return Promise.all(planetsPromises);
+  }
+
+  getPlanetResidents = (residentUrls) => {
+    const residentsPromises = residentUrls.map( async (residentUrl) => {
+      const response = await fetch(residentUrl);
+      const data = await response.json();
+      const residentName = data.name;
+
+      return residentName;
+    })
+
+    return Promise.all(residentsPromises);
   }
 
   getVehiclesData = async () => {
