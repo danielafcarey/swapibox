@@ -1,15 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 import Navigation from '../Navigation/Navigation.js';
+import Landing from '../Landing/Landing.js';
+import ApiHelper from '../../Api.js';
+const apiHelper = new ApiHelper();
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       selectedButton: '',
-      selectedData: {}
+      selectedData: {},
+      crawlData: {} 
     }
   }
+
+  // componentDidMount = async () => {
+  //   const crawlData = await apiHelper.getCrawlData();
+
+  //   this.setState({ crawlData })
+  // }
 
   changeCategory = (event) => {
     const buttonName = event.target.name;
@@ -28,6 +38,10 @@ class App extends Component {
 
   changeSelectedButton = (selectedButton) => {
     this.setState({ selectedButton });
+  }
+
+  changeDataState = (data) => {
+    this.setState({ selectedData: data })
   }
 
   getPeopleData = () => {
@@ -53,8 +67,11 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">swapi box</h1>
-          <Navigation changeCategory={ this.changeCategory }/>
+          <Navigation 
+            changeCategory={ this.changeCategory }
+            selectedButton={ this.state.selectedButton }/>
         </header>
+        {/* <Landing crawlData={ this.state.crawlData }/> */} 
       </div>
     );
   }

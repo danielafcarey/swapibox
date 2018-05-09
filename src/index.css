@@ -1,5 +1,18 @@
 body {
   background: black url('./images/background.png') no-repeat fixed;
   background-size: cover;
-  font-family: 'Pangolin', cursive;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: white;
+  font-size: 10px;
+}  
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
 }
+
+

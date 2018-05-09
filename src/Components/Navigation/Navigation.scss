@@ -7,8 +7,9 @@
     background: black;
     border: none;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 5px;
+    font-family: 'PT Sans Narrow', sans-serif;
 
     &:hover {
       cursor: pointer;
@@ -18,5 +19,17 @@
       font-weight: bold;
       outline: none;
     }
+  }
+
+  .showSelectMessage {
+    display: block;
+    font-size: 2rem;
+    text-align: right;
+    margin-right: 1rem;
+    margin-top: .5rem;
+  }
+
+  .hide {
+    display: none;
   }
 }
