@@ -27,11 +27,6 @@ export default class ApiHelper {
       releaseDate: release_date } ;
   }
 
-  // Name - in person.name
-  // Species - array - fetch from this.speciesUrl
-  // Homeworld - fetch from this.planetsUrl
-  // Population of Homeworld - fetch from this.planetsUrl
-
   getPeopleData = async () => {
     const response = await fetch(this.peopleUrl);
     const data = await response.json();
