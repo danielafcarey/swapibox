@@ -3,7 +3,7 @@ export default class ApiHelper {
     this.filmUrl = 'http://swapi.co/api/films/';
     this.peopleUrl = 'https://swapi.co/api/people/';
     this.planetsUrl = 'https://swapi.co/api/planets/';
-    this.vehiclesUrl = 'https://swapi.co/api/planets/';
+    this.vehiclesUrl = 'https://swapi.co/api/vehicles/';
     this.speciesUrl = 'https://swapi.co/api/species/'
     this.starshipsUrl = 'https://swapi.co/api/starships/'
   }
@@ -24,7 +24,8 @@ export default class ApiHelper {
     return { 
       crawlText: opening_crawl, 
       title, 
-      releaseDate: release_date } ;
+      releaseDate: release_date 
+    };
   }
 
   getPeopleData = async () => {
@@ -41,8 +42,8 @@ export default class ApiHelper {
       const species = await this.getSpeciesData(person.species);
       const homeworldInfo = await this.getPersonPlanetData(person.homeworld);
 
-      return { ...homeworldInfo, name, species };
-    })
+      return { ...homeworldInfo, name, species, favorite: false };
+    });
 
     return Promise.all(peoplePromises);
   }
@@ -54,7 +55,7 @@ export default class ApiHelper {
       const speciesName = data.name;
 
       return speciesName;
-    })
+    });
 
     return Promise.all(species);
   }
@@ -65,7 +66,7 @@ export default class ApiHelper {
     const homeworld = data.name;
     const homeworldPop = data.population;
 
-    return { homeworld, homeworldPop } 
+    return { homeworld, homeworldPop }; 
   }
 
   getPlanetsData = async () => {
@@ -84,8 +85,8 @@ export default class ApiHelper {
       const climate = planet.climate;
       const residents = await this.getPlanetResidents(planet.residents);
 
-      return { name, terrain, population, climate, residents };
-    })
+      return { name, terrain, population, climate, residents, favorite: false };
+    });
 
     return Promise.all(planetsPromises);
   }
@@ -97,13 +98,30 @@ export default class ApiHelper {
       const residentName = data.name;
 
       return residentName;
-    })
+    });
 
     return Promise.all(residentsPromises);
   }
 
   getVehiclesData = async () => {
+    const response = await fetch(this.vehiclesUrl);
+    const data = await response.json();
+    const vehiclesData = await this.createVehiclesData(data.results);
 
+    return vehiclesData;
+  }
+
+  createVehiclesData = (vehicles) => {
+    const vehiclesPromises = vehicles.map( async (vehicle) => {
+      const name = vehicle.name;
+      const model = vehicle.model;
+      const vehicleClass = vehicle.vehicle_class;
+      const numberOfPassengers = vehicle.passengers;
+
+      return { name, model, vehicleClass, numberOfPassengers, favorite: false }
+    });
+
+    return Promise.all(vehiclesPromises);
   }
 
 
