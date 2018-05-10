@@ -27,19 +27,20 @@ class App extends Component {
   //   this.setState({ crawlData })
   // }
 
-  changeCategory = (event) => {
+  changeCategory = async (event) => {
     const buttonName = event.target.name;
+
     if (buttonName === 'People') {
-      this.getPeopleData();
+      await this.getPeopleData();
     } else if (buttonName === 'Planets') {
-      this.getPlanetsData();
+      await this.getPlanetsData();
     } else if (buttonName === 'Vehicles') {
-      this.getVehiclesData();
+      await this.getVehiclesData();
     } else if (buttonName === 'Favorites') {
-      this.getFavoritesData();
+      await this.getFavoritesData();
     }
 
-    this.changeSelectedButton(buttonName);
+    await this.changeSelectedButton(buttonName);
   }
 
   changeSelectedButton = (selectedButton) => {
@@ -82,11 +83,11 @@ class App extends Component {
     // per React docs: https://reactjs.org/docs/jsx-in-depth.html
     // const CardsDisplay = selectedButton; 
     // return <CardsDisplay cardData={ selectedData } />
-    if (selectedButton === 'People') {
+    if (selectedButton === 'People' && selectedData[0].homeworld) {
       return <People cardData={ selectedData } />;
-    } else if (selectedButton === 'Planets') {
+    } else if (selectedButton === 'Planets' && selectedData[0].climate) {
       return <Planets cardData={ selectedData } />;
-    } else if (selectedButton === 'Vehicles') {
+    } else if (selectedButton === 'Vehicles' && selectedData[0].model) {
       return <Vehicles cardData={ selectedData } />;
     } else if (selectedButton === 'Favorites') {
       return <Favorites cardData={ selectedData } />;
