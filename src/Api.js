@@ -9,16 +9,25 @@ export default class ApiHelper {
   }
 
   getCrawlData = async () => {
-    const response = await fetch(this.filmUrl);
-    const data = await response.json();
-    const crawlData = await this.createCrawlData(data.results);
+    try {
+      const response = await fetch(this.filmUrl);
 
-    return crawlData;
+      if (response.status === 200) {
+        const data = await response.json();
+        return await this.createCrawlData(data.results);
+      } else {
+        throw Error('Status failure');
+      }
+
+    } catch(error) {
+      throw Error(`getCrawlData: ${error}`);
+    }
+
   }
 
   createCrawlData = (films) => {
-    const randomNumber = Math.floor(Math.random() * (films.length) + 1);
-    const randomFilm = films.find(film => film.episode_id === randomNumber);
+    const randomNumber = Math.floor(Math.random() * (films.length - 1));
+    const randomFilm = films[randomNumber];
     const { opening_crawl, title, release_date } = randomFilm;
 
     return { 
@@ -29,11 +38,19 @@ export default class ApiHelper {
   }
 
   getPeopleData = async () => {
-    const response = await fetch(this.peopleUrl);
-    const data = await response.json();
-    const peopleData = await this.createPeopleData(data.results);
+    try {
+      const response = await fetch(this.peopleUrl);
 
-    return peopleData;
+      if (response.status === 200) {
+        const data = await response.json();
+        return await this.createpeopledata(data.results);
+      } else {
+        throw Error('Status failure');
+      }
+
+    } catch(error) {
+      throw Error(`getCrawlData: ${error}`);
+    }
   }
 
   createPeopleData = (people) => {
@@ -50,31 +67,56 @@ export default class ApiHelper {
 
   getSpeciesData = (speciesUrls) => {
     const species = speciesUrls.map( async (speciesUrl) => {
-      const response = await fetch(speciesUrl);
-      const data = await response.json();
-      const speciesName = data.name;
+      try {
+        const response = await fetch(speciesUrl);
 
-      return speciesName;
+        if (response.status === 200) {
+          const data = await response.json();
+          return data.name;
+        } else {
+          throw Error('Status failure');
+        }
+
+      } catch(error) {
+        throw Error(`getSpeciesData: ${error}`)
+      }
     });
 
     return Promise.all(species);
   }
 
   getPersonPlanetData = async (planetUrl) => {
-    const response = await fetch(planetUrl);
-    const data = await response.json();
-    const homeworld = data.name;
-    const homeworldPop = data.population;
+    try {
+      const response = await fetch(planetUrl);
 
-    return { homeworld, homeworldPop }; 
+      if (response.status === 200) {
+        const data = await response.json();
+        const homeworld = data.name;
+        const homeworldPop = data.population;
+        return { homeworld, homeworldPop }; 
+      } else {
+        throw Error('Status failure');
+      }
+
+    } catch(error) {
+      throw Error(`getPersonPlanetData: ${error}`);
+    }
   }
 
   getPlanetsData = async () => {
-    const response = await fetch(this.planetsUrl);
-    const data = await response.json();
-    const planetsData = await this.createPlanetsData(data.results);
+    try {
+      const response = await fetch(this.planetsUrl);
 
-    return planetsData;
+      if (response.status === 200) {
+        const data = await response.json();
+        return await this.createPlanetsData(data.results);
+      } else {
+        throw Error('Status failure');
+      }
+
+    } catch(error) {
+      throw Error(`getPlanetsData: ${error}`);
+    }
   }
 
   createPlanetsData = (planets) => {
@@ -93,22 +135,38 @@ export default class ApiHelper {
 
   getPlanetResidents = (residentUrls) => {
     const residentsPromises = residentUrls.map( async (residentUrl) => {
-      const response = await fetch(residentUrl);
-      const data = await response.json();
-      const residentName = data.name;
+      try {
+        const response = await fetch(residentUrl);
 
-      return residentName;
+        if (response.status === 200) {
+          const data = await response.json();
+          return data.name;
+        } else {
+          throw Error('Status failure')
+        }
+
+      } catch(error) {
+        throw Error(`getPlanetsData: ${error}`)
+      }
     });
 
     return Promise.all(residentsPromises);
   }
 
   getVehiclesData = async () => {
-    const response = await fetch(this.vehiclesUrl);
-    const data = await response.json();
-    const vehiclesData = await this.createVehiclesData(data.results);
+    try {
+      const response = await fetch(this.vehiclesUrl);
 
-    return vehiclesData;
+      if (response.status === 200) {
+        const data = await response.json();
+        return await this.createVehiclesData(data.results);
+      } else {
+        throw Error('Status failure');
+      }
+
+    } catch(error) {
+      throw Error(`getVehiclesData: ${error}`);
+    }
   }
 
   createVehiclesData = (vehicles) => {
