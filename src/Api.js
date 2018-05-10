@@ -112,7 +112,7 @@ export default class ApiHelper {
   }
 
   createVehiclesData = (vehicles) => {
-    const vehiclesPromises = vehicles.map( async (vehicle) => {
+    const vehiclesPromises = vehicles.map( (vehicle) => {
       const name = vehicle.name;
       const model = vehicle.model;
       const vehicleClass = vehicle.vehicle_class;

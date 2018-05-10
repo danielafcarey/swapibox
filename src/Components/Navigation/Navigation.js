@@ -8,22 +8,22 @@ const Navigation = ({ selectedButton, changeCategory }) => {
     <div className='Navigation'>
       <button 
         className='people-button'
-        name='people'
+        name='People'
         onClick={ changeCategory }
       >People</button>
       <button 
         className='planets-button'
-        name='planets'
+        name='Planets'
         onClick={ changeCategory }  
       >Planets</button>
       <button 
         className='vehicles-button'
-        name='vehicles'
+        name='Vehicles'
         onClick={ changeCategory }  
       >Vehicles</button>
       <button 
         className='favorites-button'
-        name='favorites'
+        name='Favorites'
         onClick={ changeCategory }  
       >Favorites</button>
       <h3 className={ showSelectMessage }>Select a category</h3>
