@@ -1,11 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Card from '../Card/Card.js';
+
 const Vehicles = ({ cardData }) => {
-   return (
-      <div className="Vehicles">
-      </div>
-    );
+  const vehiclesCards = cardData.map(card => {
+    const { name, vehiclesClass, model, numberOfPassengers } = card;
+
+    return (
+      <Card
+        title={ name }
+        item1={ `Class: ${vehiclesClass}` }
+        item2={ `Model: ${model}` }
+        item3={ `Total Passengers: ${numberOfPassengers}` }
+      />
+    )
+  })
+
+  return (
+    <div className="card-container Vehicles">
+      { vehiclesCards }
+    </div>
+  );
 }
 
 Vehicles.propTypes = {
