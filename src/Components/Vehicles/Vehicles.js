@@ -5,12 +5,12 @@ import Card from '../Card/Card.js';
 
 const Vehicles = ({ cardData }) => {
   const vehiclesCards = cardData.map(card => {
-    const { name, vehiclesClass, model, numberOfPassengers } = card;
+    const { name, vehicleClass, model, numberOfPassengers } = card;
 
     return (
       <Card
         title={ name }
-        item1={ `Class: ${vehiclesClass}` }
+        item1={ `Class: ${vehicleClass}` }
         item2={ `Model: ${model}` }
         item3={ `Total Passengers: ${numberOfPassengers}` }
       />

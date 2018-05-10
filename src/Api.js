@@ -159,7 +159,7 @@ export default class ApiHelper {
 
       if (response.status === 200) {
         const data = await response.json();
-        return await this.createVehiclesData(data.results);
+        return this.createVehiclesData(data.results);
       } else {
         throw Error('Status failure');
       }
@@ -179,7 +179,7 @@ export default class ApiHelper {
       return { name, model, vehicleClass, numberOfPassengers, favorite: false }
     });
 
-    return Promise.all(vehiclesPromises);
+    return (vehiclesPromises);
   }
 
 
