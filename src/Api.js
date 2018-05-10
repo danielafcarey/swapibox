@@ -16,7 +16,7 @@ export default class ApiHelper {
         const data = await response.json();
         return await this.createCrawlData(data.results);
       } else {
-        throw Error('Status failure');
+        throw Error(`Status failure: ${response.status}`);
       }
 
     } catch(error) {
@@ -43,13 +43,13 @@ export default class ApiHelper {
 
       if (response.status === 200) {
         const data = await response.json();
-        return await this.createpeopledata(data.results);
+        return await this.createPeopleData(data.results);
       } else {
-        throw Error('Status failure');
+        throw Error(`Status failure: ${response.status}`);
       }
 
     } catch(error) {
-      throw Error(`getCrawlData: ${error}`);
+      throw Error(`getPeopleData: ${error}`);
     }
   }
 
@@ -74,7 +74,7 @@ export default class ApiHelper {
           const data = await response.json();
           return data.name;
         } else {
-          throw Error('Status failure');
+          throw Error(`Status failure: ${response.status}`);
         }
 
       } catch(error) {
@@ -95,7 +95,7 @@ export default class ApiHelper {
         const homeworldPop = data.population;
         return { homeworld, homeworldPop }; 
       } else {
-        throw Error('Status failure');
+        throw Error(`Status failure: ${response.status}`);
       }
 
     } catch(error) {
@@ -111,7 +111,7 @@ export default class ApiHelper {
         const data = await response.json();
         return await this.createPlanetsData(data.results);
       } else {
-        throw Error('Status failure');
+        throw Error(`Status failure: ${response.status}`);
       }
 
     } catch(error) {
@@ -142,7 +142,7 @@ export default class ApiHelper {
           const data = await response.json();
           return data.name;
         } else {
-          throw Error('Status failure')
+          throw Error(`Status failure: ${response.status}`)
         }
 
       } catch(error) {
@@ -161,7 +161,7 @@ export default class ApiHelper {
         const data = await response.json();
         return this.createVehiclesData(data.results);
       } else {
-        throw Error('Status failure');
+        throw Error(`Status failure: ${response.status}`);
       }
 
     } catch(error) {

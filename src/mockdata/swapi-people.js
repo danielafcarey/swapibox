@@ -92,3 +92,7 @@ const mockPeopleData = {
         }
     ]
 }
+
+export {
+  mockPeopleData
+}
