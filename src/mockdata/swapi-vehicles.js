@@ -66,3 +66,7 @@ const mockVehiclesData = {
         }
     ]
 }
+
+export {
+  mockVehiclesData
+}

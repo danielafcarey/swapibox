@@ -64,3 +64,8 @@ const mockPlanetsData = {
         }
     ]
 }
+
+
+export {
+  mockPlanetsData
+}

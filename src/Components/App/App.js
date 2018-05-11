@@ -64,6 +64,7 @@ class App extends Component {
   getVehiclesData = async () => {
     const vehiclesData = await apiHelper.getVehiclesData();
     this.changeDataState(vehiclesData);
+    await console.log(JSON.stringify(vehiclesData))
   }
 
   getFavoritesData = () => {
