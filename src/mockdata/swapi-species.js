@@ -52,3 +52,7 @@ const mockSpeciesData = {
         }
     ]
 }
+
+export {
+  mockSpeciesData
+}

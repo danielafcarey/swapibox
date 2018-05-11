@@ -19,10 +19,114 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "host",
     "props": Object {
+      "children": Array [
+        <button
+          className="people-button"
+          name="People"
+          onClick={[Function]}
+>
+          People
+</button>,
+        <button
+          className="planets-button"
+          name="Planets"
+          onClick={[Function]}
+>
+          Planets
+</button>,
+        <button
+          className="vehicles-button"
+          name="Vehicles"
+          onClick={[Function]}
+>
+          Vehicles
+</button>,
+        <button
+          className="favorites-button"
+          name="Favorites"
+          onClick={[Function]}
+>
+          Favorites
+</button>,
+        <h3
+          className="showSelectMessage"
+>
+          Select a category
+</h3>,
+      ],
       "className": "Navigation",
     },
     "ref": null,
-    "rendered": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "People",
+          "className": "people-button",
+          "name": "People",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "People",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Planets",
+          "className": "planets-button",
+          "name": "Planets",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Planets",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Vehicles",
+          "className": "vehicles-button",
+          "name": "Vehicles",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Vehicles",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Favorites",
+          "className": "favorites-button",
+          "name": "Favorites",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "Favorites",
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Select a category",
+          "className": "showSelectMessage",
+        },
+        "ref": null,
+        "rendered": "Select a category",
+        "type": "h3",
+      },
+    ],
     "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
@@ -31,10 +135,114 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "host",
       "props": Object {
+        "children": Array [
+          <button
+            className="people-button"
+            name="People"
+            onClick={[Function]}
+>
+            People
+</button>,
+          <button
+            className="planets-button"
+            name="Planets"
+            onClick={[Function]}
+>
+            Planets
+</button>,
+          <button
+            className="vehicles-button"
+            name="Vehicles"
+            onClick={[Function]}
+>
+            Vehicles
+</button>,
+          <button
+            className="favorites-button"
+            name="Favorites"
+            onClick={[Function]}
+>
+            Favorites
+</button>,
+          <h3
+            className="showSelectMessage"
+>
+            Select a category
+</h3>,
+        ],
         "className": "Navigation",
       },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "People",
+            "className": "people-button",
+            "name": "People",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "People",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Planets",
+            "className": "planets-button",
+            "name": "Planets",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Planets",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Vehicles",
+            "className": "vehicles-button",
+            "name": "Vehicles",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Vehicles",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Favorites",
+            "className": "favorites-button",
+            "name": "Favorites",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "Favorites",
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Select a category",
+            "className": "showSelectMessage",
+          },
+          "ref": null,
+          "rendered": "Select a category",
+          "type": "h3",
+        },
+      ],
       "type": "div",
     },
   ],

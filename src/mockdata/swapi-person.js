@@ -1,4 +1,4 @@
-const mockPeopleData2 = {
+const mockPersonData = {
     "count": 87, 
     "next": null, 
     "previous": "https://swapi.co/api/people/?page=8", 
