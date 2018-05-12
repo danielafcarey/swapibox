@@ -16,8 +16,9 @@ class App extends Component {
     super(props);
     this.state = {
       selectedButton: '',
-      selectedData: {},
-      crawlData: {} 
+      selectedData: [],
+      crawlData: {},
+      favorites:  []
     }
   }
 
@@ -37,7 +38,7 @@ class App extends Component {
     } else if (buttonName === 'Vehicles') {
       await this.getVehiclesData();
     } else if (buttonName === 'Favorites') {
-      await this.getFavoritesData();
+      await this.getCardsDisplay();
     }
 
     await this.changeSelectedButton(buttonName);
@@ -47,28 +48,76 @@ class App extends Component {
     this.setState({ selectedButton });
   }
 
-  changeDataState = (data) => {
-    this.setState({ selectedData: data });
+  changeDataState = (selectedData) => {
+    this.setState({ selectedData });
   }
 
   getPeopleData = async () => {
     const peopleData = await apiHelper.getPeopleData();
-    this.changeDataState(peopleData);
+    this.compareToFavorites(peopleData);
   }
 
   getPlanetsData = async () => {
     const planetsData = await apiHelper.getPlanetsData();
-    this.changeDataState(planetsData);
+    this.compareToFavorites(planetsData);
   }
 
   getVehiclesData = async () => {
     const vehiclesData = await apiHelper.getVehiclesData();
-    this.changeDataState(vehiclesData);
-    await console.log(JSON.stringify(vehiclesData))
+    this.compareToFavorites(vehiclesData);
   }
 
-  getFavoritesData = () => {
+  toggleFavorite = (cardId) => {
+    const newSelectedData = this.state.selectedData.map(card => {
+      if (cardId === card.id) {
+        card.favorite = !card.favorite
+      }
 
+      return card;
+    });
+
+    this.setState(
+      { selectedData: newSelectedData }, 
+      () => this.updateFavoritesInState(cardId) 
+    )
+  }
+
+  updateFavoritesInState = (cardId) => {
+    const selectedCard = this.state.selectedData.find(data => {
+      console.log(data, data.id, cardId);
+      return data.id === cardId;
+    });
+
+    if (!selectedCard) {
+      this.removeFromFavorites(cardId);
+      return;
+    }
+
+    if (selectedCard.favorite) {
+      this.setState({ favorites: [...this.state.favorites, selectedCard ] });
+    } else {
+      this.removeFromFavorites(cardId);
+    }
+  }
+
+  compareToFavorites = (selectedData) => {
+    const newSelectedData = selectedData.map(data => {
+      if (this.state.favorites.find(favorite => favorite.id === data.id)) {
+        data.favorite = true;
+      }
+      
+      return data;
+    }) 
+
+    this.changeDataState(newSelectedData);
+  }
+
+  removeFromFavorites = (cardId) => {
+    const newFavorites = this.state.favorites.filter(favorite => {
+      return favorite.id !== cardId
+    })
+
+    this.setState({ favorites: newFavorites })
   }
 
   getDisplayElements = () => {
@@ -80,18 +129,35 @@ class App extends Component {
   }
 
   getCardsDisplay = () => {
-    const { selectedButton, selectedData } = this.state;
-    // per React docs: https://reactjs.org/docs/jsx-in-depth.html
-    // const CardsDisplay = selectedButton; 
-    // return <CardsDisplay cardData={ selectedData } />
+    const { selectedButton, selectedData, favorites } = this.state;
     if (selectedButton === 'People' && selectedData[0].homeworld) {
-      return <People cardData={ selectedData } />;
+      return (
+        <People 
+          cardData={ selectedData } 
+          toggleFavorite={ this.toggleFavorite }  
+        />
+      );    
     } else if (selectedButton === 'Planets' && selectedData[0].climate) {
-      return <Planets cardData={ selectedData } />;
+      return (
+        <Planets 
+          cardData={ selectedData }
+          toggleFavorite={ this.toggleFavorite } 
+        />
+      );
     } else if (selectedButton === 'Vehicles' && selectedData[0].model) {
-      return <Vehicles cardData={ selectedData } />;
+      return (
+        <Vehicles 
+          cardData={ selectedData } 
+          toggleFavorite={ this.toggleFavorite } 
+        />
+      );
     } else if (selectedButton === 'Favorites') {
-      return <Favorites cardData={ selectedData } />;
+      return (
+        <Favorites 
+          cardData={ favorites } 
+          toggleFavorite={ this.toggleFavorite }
+        />
+      );
     }
   }
 

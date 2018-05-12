@@ -3,17 +3,34 @@ import PropTypes from 'prop-types';
 
 const Card = (props) => {
   const {
+    id,
     title,
     item1,
     item2,
     item3,
-    item4
+    item4,
+    favorite,
+    toggleFavorite
   } = props;
+
+  let imgSrc;
+  if (favorite) {
+    imgSrc = require('../../images/lightsaber-red.png')
+  } else {
+    imgSrc = require('../../images/lightsaber-white.png')
+  }
 
   return (
     <div className="Card">
       <h3 className="title">{ title }</h3>
-      <button><img src={require('../../images/lightsaber-white.png')} /></button>
+      <button 
+        onClick={ () => toggleFavorite(id) }
+      >
+        <img 
+          src={ imgSrc } 
+          alt="Add to favorites"
+        />
+      </button>
       <div className="info-list">
         <h4 className="info">{ item1 }</h4>
         <h4 className="info">{ item2 }</h4>
