@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import Card from '../Card/Card.js';
 
-const People = ({ cardData, addToFavorites }) => {
+const People = ({ cardData, toggleFavorite }) => {
   const peopleCards = cardData.map(card => {
     const { id, favorite, name, homeworld, homeworldPop, species } = card;
 
@@ -15,7 +15,7 @@ const People = ({ cardData, addToFavorites }) => {
         item2={ `Population: ${homeworldPop}` }
         item3={ `Species: ${species.join(', ')}` }
         favorite={ favorite }
-        addToFavorites={ addToFavorites }
+        toggleFavorite={ toggleFavorite }
       />
     )
   })

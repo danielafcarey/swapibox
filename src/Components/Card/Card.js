@@ -10,7 +10,7 @@ const Card = (props) => {
     item3,
     item4,
     favorite,
-    addToFavorites
+    toggleFavorite
   } = props;
 
   let imgSrc;
@@ -24,7 +24,7 @@ const Card = (props) => {
     <div className="Card">
       <h3 className="title">{ title }</h3>
       <button 
-        onClick={ () => addToFavorites(id) }
+        onClick={ () => toggleFavorite(id) }
       >
         <img 
           src={ imgSrc } 
