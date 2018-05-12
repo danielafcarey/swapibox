@@ -38,7 +38,7 @@ class App extends Component {
     } else if (buttonName === 'Vehicles') {
       await this.getVehiclesData();
     } else if (buttonName === 'Favorites') {
-      await this.getFavoritesData();
+      await this.getCardsDisplay();
     }
 
     await this.changeSelectedButton(buttonName);
@@ -84,8 +84,14 @@ class App extends Component {
 
   updateFavoritesInState = (cardId) => {
     const selectedCard = this.state.selectedData.find(data => {
-      return data.id === cardId
+      console.log(data, data.id, cardId);
+      return data.id === cardId;
     });
+
+    if (!selectedCard) {
+      this.removeFromFavorites(cardId);
+      return;
+    }
 
     if (selectedCard.favorite) {
       this.setState({ favorites: [...this.state.favorites, selectedCard ] });
@@ -149,7 +155,7 @@ class App extends Component {
       return (
         <Favorites 
           cardData={ favorites } 
-          removeFromFavorites={ this.removeFromFavorites }
+          toggleFavorite={ this.toggleFavorite }
         />
       );
     }

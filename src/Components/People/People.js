@@ -16,6 +16,7 @@ const People = ({ cardData, toggleFavorite }) => {
         item3={ `Species: ${species.join(', ')}` }
         favorite={ favorite }
         toggleFavorite={ toggleFavorite }
+        key={ id }
       />
     )
   })
