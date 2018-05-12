@@ -16,8 +16,9 @@ class App extends Component {
     super(props);
     this.state = {
       selectedButton: '',
-      selectedData: {},
-      crawlData: {} 
+      selectedData: [],
+      crawlData: {},
+      favorites:  []
     }
   }
 
@@ -47,27 +48,64 @@ class App extends Component {
     this.setState({ selectedButton });
   }
 
-  changeDataState = (data) => {
-    this.setState({ selectedData: data });
+  changeDataState = (selectedData) => {
+    this.setState({ selectedData });
   }
 
   getPeopleData = async () => {
     const peopleData = await apiHelper.getPeopleData();
-    this.changeDataState(peopleData);
+    //run this.compareToFavorites(PeopleData);
+    this.compareToFavorites(peopleData);
   }
 
   getPlanetsData = async () => {
     const planetsData = await apiHelper.getPlanetsData();
-    this.changeDataState(planetsData);
+    //run this.compareToFavorites(PeopleData);
+    this.compareToFavorites(planetsData);
   }
 
   getVehiclesData = async () => {
     const vehiclesData = await apiHelper.getVehiclesData();
-    this.changeDataState(vehiclesData);
-    await console.log(JSON.stringify(vehiclesData))
+    //run this.compareToFavorites(PeopleData);
+    this.compareToFavorites(vehiclesData);
   }
 
-  getFavoritesData = () => {
+  addToFavorites = (cardId) => {
+    const newSelectedData = this.state.selectedData.map(card => {
+      if (cardId === card.id) {
+        card.favorite = !card.favorite
+      }
+
+      return card;
+    });
+
+    this.setState(
+      { selectedData: newSelectedData }, 
+      () => this.updateFavoritesInState(cardId) 
+    )
+  }
+
+  updateFavoritesInState = (cardId) => {
+    const favoritedCard = this.state.selectedData.find(data => {
+      return data.id === cardId
+    });
+    this.setState({ favorites: [...this.state.favorites, favoritedCard] });
+  }
+
+  compareToFavorites = (selectedData) => {
+    // to run after getPlanets/People/VehicleData
+    const newSelectedData = selectedData.map(data => {
+      if (this.state.favorites.find(favorite => favorite.id === data.id)) {
+        data.favorite = true;
+      }
+      
+      return data;
+    }) 
+
+    this.changeDataState(newSelectedData);
+  }
+
+  removeFromFavorites = (cardId) => {
 
   }
 
@@ -80,18 +118,38 @@ class App extends Component {
   }
 
   getCardsDisplay = () => {
-    const { selectedButton, selectedData } = this.state;
+    const { selectedButton, selectedData, favorites } = this.state;
     // per React docs: https://reactjs.org/docs/jsx-in-depth.html
     // const CardsDisplay = selectedButton; 
     // return <CardsDisplay cardData={ selectedData } />
     if (selectedButton === 'People' && selectedData[0].homeworld) {
-      return <People cardData={ selectedData } />;
+      return (
+        <People 
+          cardData={ selectedData } 
+          addToFavorites={ this.addToFavorites }  
+        />
+      );    
     } else if (selectedButton === 'Planets' && selectedData[0].climate) {
-      return <Planets cardData={ selectedData } />;
+      return (
+        <Planets 
+          cardData={ selectedData }
+          addToFavorites={ this.addToFavorites } 
+        />
+      );
     } else if (selectedButton === 'Vehicles' && selectedData[0].model) {
-      return <Vehicles cardData={ selectedData } />;
+      return (
+        <Vehicles 
+          cardData={ selectedData } 
+          addToFavorites={ this.addToFavorites } 
+        />
+      );
     } else if (selectedButton === 'Favorites') {
-      return <Favorites cardData={ selectedData } />;
+      return (
+        <Favorites 
+          cardData={ favorites } 
+          removeFromFavorites={ this.removeFromFavorites }
+        />
+      );
     }
   }
 

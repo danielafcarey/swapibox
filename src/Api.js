@@ -59,7 +59,13 @@ export default class ApiHelper {
       const species = await this.getSpeciesData(person.species);
       const homeworldInfo = await this.getPersonPlanetData(person.homeworld);
 
-      return { ...homeworldInfo, name, species, favorite: false };
+      return { 
+        ...homeworldInfo, 
+        name, 
+        species, 
+        favorite: false,
+        id: person.url
+      };
     });
 
     return Promise.all(peoplePromises);
@@ -127,7 +133,15 @@ export default class ApiHelper {
       const climate = planet.climate;
       const residents = await this.getPlanetResidents(planet.residents);
 
-      return { name, terrain, population, climate, residents, favorite: false };
+      return { 
+        name, 
+        terrain, 
+        population, 
+        climate, 
+        residents, 
+        favorite: false, 
+        id: planet.url
+      };
     });
 
     return Promise.all(planetsPromises);
@@ -176,7 +190,14 @@ export default class ApiHelper {
       const vehicleClass = vehicle.vehicle_class;
       const numberOfPassengers = vehicle.passengers;
 
-      return { name, model, vehicleClass, numberOfPassengers, favorite: false }
+      return { 
+        name, 
+        model, 
+        vehicleClass, 
+        numberOfPassengers, 
+        favorite: false,
+        id: vehicle.url 
+      }
     });
 
     return (vehiclesPromises);
