@@ -35,6 +35,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item4={ `Residents: ${residents.join(', ')}` }
           favorite={ favorite }
           toggleFavorite={ toggleFavorite }
+          key={ id }
         />
       )
 
@@ -50,6 +51,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item3={ `Total Passengers: ${numberOfPassengers}` }
           favorite={ favorite }
           toggleFavorite={ toggleFavorite }
+          key={ id }
         />
       )
 

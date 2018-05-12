@@ -84,7 +84,6 @@ class App extends Component {
 
   updateFavoritesInState = (cardId) => {
     const selectedCard = this.state.selectedData.find(data => {
-      console.log(data, data.id, cardId);
       return data.id === cardId;
     });
 
