@@ -27,7 +27,26 @@ class App extends Component {
   componentDidMount = async () => {
     const crawlData = await apiHelper.getCrawlData();
 
+    this.getFavoritesFromStorage();
     this.setState({ crawlData });
+  }
+
+//   componentDidUpdate = () => {
+//     this.setFavoritesInStorage();
+//   }
+
+  componenetWillUnmount = () => {
+    this.setFavoritesInStorage();
+  }
+
+  getFavoritesFromStorage = () => {
+    const favoritesFromStorage = JSON.parse(localStorage.getItem('SWAPI'));
+    this.setState({ favorites: favoritesFromStorage }); 
+  }
+
+  setFavoritesInStorage = () => {
+    const stringifiedFavorites = JSON.stringify(this.state.favorites);
+    localStorage.setItem('SWAPI', stringifiedFavorites);
   }
 
   changeCategory = async (event) => {
@@ -97,7 +116,10 @@ class App extends Component {
     }
 
     if (selectedCard.favorite) {
-      this.setState({ favorites: [...this.state.favorites, selectedCard] });
+      this.setState(
+        { favorites: [...this.state.favorites, selectedCard] }, 
+        this.setFavoritesInStorage 
+      );
     } else {
       this.removeFromFavorites(cardId);
     }
@@ -120,12 +142,12 @@ class App extends Component {
       return favorite.id !== cardId;
     });
 
-    this.setState({ favorites: newFavorites });
+    this.setState({ favorites: newFavorites }, this.setFavoritesInStorage);
   }
 
   getDisplayElements = () => {
-    const { selectedData, crawlData } = this.state;
-    if (selectedData.length === 0) {
+    const { selectedData, crawlData, selectedButton } = this.state;
+    if (selectedData.length === 0 && !selectedButton ) {
       return <Landing crawlData={ crawlData } /> ;
     } else {
       return this.getCardsDisplay();        
