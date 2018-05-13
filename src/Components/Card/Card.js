@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+
 const Card = (props) => {
   const {
     id,
@@ -43,11 +44,14 @@ const Card = (props) => {
 }
 
 Card.propTypes = {
+  id: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   item1: PropTypes.string.isRequired,
   item2: PropTypes.string.isRequired,
   item3: PropTypes.string.isRequired,
-  item4: PropTypes.string
+  item4: PropTypes.string,
+  favorite: PropTypes.bool.isRequired,
+  toggleFavorite: PropTypes.func.isRequired
 }
 
 export default Card;

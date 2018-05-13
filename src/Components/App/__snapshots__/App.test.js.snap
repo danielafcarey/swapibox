@@ -199,3 +199,1939 @@ ShallowWrapper {
   },
 }
 `;
+
+exports[`App matches the snapshot if Favorites has been selected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+>
+          <h1
+                    className="App-title"
+          >
+                    swapi box
+          </h1>
+          <Navigation
+                    changeCategory={[Function]}
+                    selectedButton="Favorites"
+          />
+</header>,
+        <Landing
+          crawlData={
+                    Object {
+                              "crawlText": "",
+                              "releaseDate": "",
+                              "title": "",
+                            }
+          }
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="App-title"
+>
+              swapi box
+</h1>,
+            <Navigation
+              changeCategory={[Function]}
+              selectedButton="Favorites"
+/>,
+          ],
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "swapi box",
+              "className": "App-title",
+            },
+            "ref": null,
+            "rendered": "swapi box",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "changeCategory": [Function],
+              "selectedButton": "Favorites",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "crawlData": Object {
+            "crawlText": "",
+            "releaseDate": "",
+            "title": "",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+>
+            <h1
+                        className="App-title"
+            >
+                        swapi box
+            </h1>
+            <Navigation
+                        changeCategory={[Function]}
+                        selectedButton="Favorites"
+            />
+</header>,
+          <Landing
+            crawlData={
+                        Object {
+                                    "crawlText": "",
+                                    "releaseDate": "",
+                                    "title": "",
+                                  }
+            }
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="App-title"
+>
+                swapi box
+</h1>,
+              <Navigation
+                changeCategory={[Function]}
+                selectedButton="Favorites"
+/>,
+            ],
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "swapi box",
+                "className": "App-title",
+              },
+              "ref": null,
+              "rendered": "swapi box",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "changeCategory": [Function],
+                "selectedButton": "Favorites",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "crawlData": Object {
+              "crawlText": "",
+              "releaseDate": "",
+              "title": "",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`App matches the snapshot if People has been selected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+>
+          <h1
+                    className="App-title"
+          >
+                    swapi box
+          </h1>
+          <Navigation
+                    changeCategory={[Function]}
+                    selectedButton="People"
+          />
+</header>,
+        <People
+          cardData={
+                    Array [
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "Luke Skywalker",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "C-3PO",
+                                "species": Array [
+                                  "Droid",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Naboo",
+                                "homeworldPop": "4500000000",
+                                "name": "R2-D2",
+                                "species": Array [
+                                  "Droid",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "Darth Vader",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Alderaan",
+                                "homeworldPop": "2000000000",
+                                "name": "Leia Organa",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "Owen Lars",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "Beru Whitesun lars",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "R5-D4",
+                                "species": Array [
+                                  "Droid",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Tatooine",
+                                "homeworldPop": "200000",
+                                "name": "Biggs Darklighter",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                              Object {
+                                "favorite": false,
+                                "homeworld": "Stewjon",
+                                "homeworldPop": "unknown",
+                                "name": "Obi-Wan Kenobi",
+                                "species": Array [
+                                  "Human",
+                                ],
+                              },
+                            ]
+          }
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="App-title"
+>
+              swapi box
+</h1>,
+            <Navigation
+              changeCategory={[Function]}
+              selectedButton="People"
+/>,
+          ],
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "swapi box",
+              "className": "App-title",
+            },
+            "ref": null,
+            "rendered": "swapi box",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "changeCategory": [Function],
+              "selectedButton": "People",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cardData": Array [
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "Luke Skywalker",
+              "species": Array [
+                "Human",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "C-3PO",
+              "species": Array [
+                "Droid",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Naboo",
+              "homeworldPop": "4500000000",
+              "name": "R2-D2",
+              "species": Array [
+                "Droid",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "Darth Vader",
+              "species": Array [
+                "Human",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Alderaan",
+              "homeworldPop": "2000000000",
+              "name": "Leia Organa",
+              "species": Array [
+                "Human",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "Owen Lars",
+              "species": Array [
+                "Human",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "Beru Whitesun lars",
+              "species": Array [
+                "Human",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "R5-D4",
+              "species": Array [
+                "Droid",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Tatooine",
+              "homeworldPop": "200000",
+              "name": "Biggs Darklighter",
+              "species": Array [
+                "Human",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Stewjon",
+              "homeworldPop": "unknown",
+              "name": "Obi-Wan Kenobi",
+              "species": Array [
+                "Human",
+              ],
+            },
+          ],
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+>
+            <h1
+                        className="App-title"
+            >
+                        swapi box
+            </h1>
+            <Navigation
+                        changeCategory={[Function]}
+                        selectedButton="People"
+            />
+</header>,
+          <People
+            cardData={
+                        Array [
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "Luke Skywalker",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "C-3PO",
+                                      "species": Array [
+                                        "Droid",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Naboo",
+                                      "homeworldPop": "4500000000",
+                                      "name": "R2-D2",
+                                      "species": Array [
+                                        "Droid",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "Darth Vader",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Alderaan",
+                                      "homeworldPop": "2000000000",
+                                      "name": "Leia Organa",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "Owen Lars",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "Beru Whitesun lars",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "R5-D4",
+                                      "species": Array [
+                                        "Droid",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Tatooine",
+                                      "homeworldPop": "200000",
+                                      "name": "Biggs Darklighter",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "homeworld": "Stewjon",
+                                      "homeworldPop": "unknown",
+                                      "name": "Obi-Wan Kenobi",
+                                      "species": Array [
+                                        "Human",
+                                      ],
+                                    },
+                                  ]
+            }
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="App-title"
+>
+                swapi box
+</h1>,
+              <Navigation
+                changeCategory={[Function]}
+                selectedButton="People"
+/>,
+            ],
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "swapi box",
+                "className": "App-title",
+              },
+              "ref": null,
+              "rendered": "swapi box",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "changeCategory": [Function],
+                "selectedButton": "People",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cardData": Array [
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "Luke Skywalker",
+                "species": Array [
+                  "Human",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "C-3PO",
+                "species": Array [
+                  "Droid",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Naboo",
+                "homeworldPop": "4500000000",
+                "name": "R2-D2",
+                "species": Array [
+                  "Droid",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "Darth Vader",
+                "species": Array [
+                  "Human",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Alderaan",
+                "homeworldPop": "2000000000",
+                "name": "Leia Organa",
+                "species": Array [
+                  "Human",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "Owen Lars",
+                "species": Array [
+                  "Human",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "Beru Whitesun lars",
+                "species": Array [
+                  "Human",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "R5-D4",
+                "species": Array [
+                  "Droid",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Tatooine",
+                "homeworldPop": "200000",
+                "name": "Biggs Darklighter",
+                "species": Array [
+                  "Human",
+                ],
+              },
+              Object {
+                "favorite": false,
+                "homeworld": "Stewjon",
+                "homeworldPop": "unknown",
+                "name": "Obi-Wan Kenobi",
+                "species": Array [
+                  "Human",
+                ],
+              },
+            ],
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`App matches the snapshot if Planets has been selected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+>
+          <h1
+                    className="App-title"
+          >
+                    swapi box
+          </h1>
+          <Navigation
+                    changeCategory={[Function]}
+                    selectedButton="Planets"
+          />
+</header>,
+        <Planets
+          cardData={
+                    Array [
+                              Object {
+                                "climate": "temperate",
+                                "favorite": false,
+                                "name": "Alderaan",
+                                "population": "2000000000",
+                                "residents": Array [
+                                  "Leia Organa",
+                                  "Bail Prestor Organa",
+                                  "Raymus Antilles",
+                                ],
+                                "terrain": "grasslands, mountains",
+                              },
+                              Object {
+                                "climate": "temperate, tropical",
+                                "favorite": false,
+                                "name": "Yavin IV",
+                                "population": "1000",
+                                "residents": Array [],
+                                "terrain": "jungle, rainforests",
+                              },
+                              Object {
+                                "climate": "frozen",
+                                "favorite": false,
+                                "name": "Hoth",
+                                "population": "unknown",
+                                "residents": Array [],
+                                "terrain": "tundra, ice caves, mountain ranges",
+                              },
+                              Object {
+                                "climate": "murky",
+                                "favorite": false,
+                                "name": "Dagobah",
+                                "population": "unknown",
+                                "residents": Array [],
+                                "terrain": "swamp, jungles",
+                              },
+                              Object {
+                                "climate": "temperate",
+                                "favorite": false,
+                                "name": "Bespin",
+                                "population": "6000000",
+                                "residents": Array [
+                                  "Lobot",
+                                ],
+                                "terrain": "gas giant",
+                              },
+                              Object {
+                                "climate": "temperate",
+                                "favorite": false,
+                                "name": "Endor",
+                                "population": "30000000",
+                                "residents": Array [
+                                  "Wicket Systri Warrick",
+                                ],
+                                "terrain": "forests, mountains, lakes",
+                              },
+                              Object {
+                                "climate": "temperate",
+                                "favorite": false,
+                                "name": "Naboo",
+                                "population": "4500000000",
+                                "residents": Array [
+                                  "R2-D2",
+                                  "Palpatine",
+                                  "Jar Jar Binks",
+                                  "Roos Tarpals",
+                                  "Rugor Nass",
+                                  "Ric Olié",
+                                  "Quarsh Panaka",
+                                  "Gregar Typho",
+                                  "Cordé",
+                                  "Dormé",
+                                  "Padmé Amidala",
+                                ],
+                                "terrain": "grassy hills, swamps, forests, mountains",
+                              },
+                              Object {
+                                "climate": "temperate",
+                                "favorite": false,
+                                "name": "Coruscant",
+                                "population": "1000000000000",
+                                "residents": Array [
+                                  "Finis Valorum",
+                                  "Adi Gallia",
+                                  "Jocasta Nu",
+                                ],
+                                "terrain": "cityscape, mountains",
+                              },
+                              Object {
+                                "climate": "temperate",
+                                "favorite": false,
+                                "name": "Kamino",
+                                "population": "1000000000",
+                                "residents": Array [
+                                  "Boba Fett",
+                                  "Lama Su",
+                                  "Taun We",
+                                ],
+                                "terrain": "ocean",
+                              },
+                              Object {
+                                "climate": "temperate, arid",
+                                "favorite": false,
+                                "name": "Geonosis",
+                                "population": "100000000000",
+                                "residents": Array [
+                                  "Poggle the Lesser",
+                                ],
+                                "terrain": "rock, desert, mountain, barren",
+                              },
+                            ]
+          }
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="App-title"
+>
+              swapi box
+</h1>,
+            <Navigation
+              changeCategory={[Function]}
+              selectedButton="Planets"
+/>,
+          ],
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "swapi box",
+              "className": "App-title",
+            },
+            "ref": null,
+            "rendered": "swapi box",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "changeCategory": [Function],
+              "selectedButton": "Planets",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cardData": Array [
+            Object {
+              "climate": "temperate",
+              "favorite": false,
+              "name": "Alderaan",
+              "population": "2000000000",
+              "residents": Array [
+                "Leia Organa",
+                "Bail Prestor Organa",
+                "Raymus Antilles",
+              ],
+              "terrain": "grasslands, mountains",
+            },
+            Object {
+              "climate": "temperate, tropical",
+              "favorite": false,
+              "name": "Yavin IV",
+              "population": "1000",
+              "residents": Array [],
+              "terrain": "jungle, rainforests",
+            },
+            Object {
+              "climate": "frozen",
+              "favorite": false,
+              "name": "Hoth",
+              "population": "unknown",
+              "residents": Array [],
+              "terrain": "tundra, ice caves, mountain ranges",
+            },
+            Object {
+              "climate": "murky",
+              "favorite": false,
+              "name": "Dagobah",
+              "population": "unknown",
+              "residents": Array [],
+              "terrain": "swamp, jungles",
+            },
+            Object {
+              "climate": "temperate",
+              "favorite": false,
+              "name": "Bespin",
+              "population": "6000000",
+              "residents": Array [
+                "Lobot",
+              ],
+              "terrain": "gas giant",
+            },
+            Object {
+              "climate": "temperate",
+              "favorite": false,
+              "name": "Endor",
+              "population": "30000000",
+              "residents": Array [
+                "Wicket Systri Warrick",
+              ],
+              "terrain": "forests, mountains, lakes",
+            },
+            Object {
+              "climate": "temperate",
+              "favorite": false,
+              "name": "Naboo",
+              "population": "4500000000",
+              "residents": Array [
+                "R2-D2",
+                "Palpatine",
+                "Jar Jar Binks",
+                "Roos Tarpals",
+                "Rugor Nass",
+                "Ric Olié",
+                "Quarsh Panaka",
+                "Gregar Typho",
+                "Cordé",
+                "Dormé",
+                "Padmé Amidala",
+              ],
+              "terrain": "grassy hills, swamps, forests, mountains",
+            },
+            Object {
+              "climate": "temperate",
+              "favorite": false,
+              "name": "Coruscant",
+              "population": "1000000000000",
+              "residents": Array [
+                "Finis Valorum",
+                "Adi Gallia",
+                "Jocasta Nu",
+              ],
+              "terrain": "cityscape, mountains",
+            },
+            Object {
+              "climate": "temperate",
+              "favorite": false,
+              "name": "Kamino",
+              "population": "1000000000",
+              "residents": Array [
+                "Boba Fett",
+                "Lama Su",
+                "Taun We",
+              ],
+              "terrain": "ocean",
+            },
+            Object {
+              "climate": "temperate, arid",
+              "favorite": false,
+              "name": "Geonosis",
+              "population": "100000000000",
+              "residents": Array [
+                "Poggle the Lesser",
+              ],
+              "terrain": "rock, desert, mountain, barren",
+            },
+          ],
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+>
+            <h1
+                        className="App-title"
+            >
+                        swapi box
+            </h1>
+            <Navigation
+                        changeCategory={[Function]}
+                        selectedButton="Planets"
+            />
+</header>,
+          <Planets
+            cardData={
+                        Array [
+                                    Object {
+                                      "climate": "temperate",
+                                      "favorite": false,
+                                      "name": "Alderaan",
+                                      "population": "2000000000",
+                                      "residents": Array [
+                                        "Leia Organa",
+                                        "Bail Prestor Organa",
+                                        "Raymus Antilles",
+                                      ],
+                                      "terrain": "grasslands, mountains",
+                                    },
+                                    Object {
+                                      "climate": "temperate, tropical",
+                                      "favorite": false,
+                                      "name": "Yavin IV",
+                                      "population": "1000",
+                                      "residents": Array [],
+                                      "terrain": "jungle, rainforests",
+                                    },
+                                    Object {
+                                      "climate": "frozen",
+                                      "favorite": false,
+                                      "name": "Hoth",
+                                      "population": "unknown",
+                                      "residents": Array [],
+                                      "terrain": "tundra, ice caves, mountain ranges",
+                                    },
+                                    Object {
+                                      "climate": "murky",
+                                      "favorite": false,
+                                      "name": "Dagobah",
+                                      "population": "unknown",
+                                      "residents": Array [],
+                                      "terrain": "swamp, jungles",
+                                    },
+                                    Object {
+                                      "climate": "temperate",
+                                      "favorite": false,
+                                      "name": "Bespin",
+                                      "population": "6000000",
+                                      "residents": Array [
+                                        "Lobot",
+                                      ],
+                                      "terrain": "gas giant",
+                                    },
+                                    Object {
+                                      "climate": "temperate",
+                                      "favorite": false,
+                                      "name": "Endor",
+                                      "population": "30000000",
+                                      "residents": Array [
+                                        "Wicket Systri Warrick",
+                                      ],
+                                      "terrain": "forests, mountains, lakes",
+                                    },
+                                    Object {
+                                      "climate": "temperate",
+                                      "favorite": false,
+                                      "name": "Naboo",
+                                      "population": "4500000000",
+                                      "residents": Array [
+                                        "R2-D2",
+                                        "Palpatine",
+                                        "Jar Jar Binks",
+                                        "Roos Tarpals",
+                                        "Rugor Nass",
+                                        "Ric Olié",
+                                        "Quarsh Panaka",
+                                        "Gregar Typho",
+                                        "Cordé",
+                                        "Dormé",
+                                        "Padmé Amidala",
+                                      ],
+                                      "terrain": "grassy hills, swamps, forests, mountains",
+                                    },
+                                    Object {
+                                      "climate": "temperate",
+                                      "favorite": false,
+                                      "name": "Coruscant",
+                                      "population": "1000000000000",
+                                      "residents": Array [
+                                        "Finis Valorum",
+                                        "Adi Gallia",
+                                        "Jocasta Nu",
+                                      ],
+                                      "terrain": "cityscape, mountains",
+                                    },
+                                    Object {
+                                      "climate": "temperate",
+                                      "favorite": false,
+                                      "name": "Kamino",
+                                      "population": "1000000000",
+                                      "residents": Array [
+                                        "Boba Fett",
+                                        "Lama Su",
+                                        "Taun We",
+                                      ],
+                                      "terrain": "ocean",
+                                    },
+                                    Object {
+                                      "climate": "temperate, arid",
+                                      "favorite": false,
+                                      "name": "Geonosis",
+                                      "population": "100000000000",
+                                      "residents": Array [
+                                        "Poggle the Lesser",
+                                      ],
+                                      "terrain": "rock, desert, mountain, barren",
+                                    },
+                                  ]
+            }
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="App-title"
+>
+                swapi box
+</h1>,
+              <Navigation
+                changeCategory={[Function]}
+                selectedButton="Planets"
+/>,
+            ],
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "swapi box",
+                "className": "App-title",
+              },
+              "ref": null,
+              "rendered": "swapi box",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "changeCategory": [Function],
+                "selectedButton": "Planets",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cardData": Array [
+              Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Alderaan",
+                "population": "2000000000",
+                "residents": Array [
+                  "Leia Organa",
+                  "Bail Prestor Organa",
+                  "Raymus Antilles",
+                ],
+                "terrain": "grasslands, mountains",
+              },
+              Object {
+                "climate": "temperate, tropical",
+                "favorite": false,
+                "name": "Yavin IV",
+                "population": "1000",
+                "residents": Array [],
+                "terrain": "jungle, rainforests",
+              },
+              Object {
+                "climate": "frozen",
+                "favorite": false,
+                "name": "Hoth",
+                "population": "unknown",
+                "residents": Array [],
+                "terrain": "tundra, ice caves, mountain ranges",
+              },
+              Object {
+                "climate": "murky",
+                "favorite": false,
+                "name": "Dagobah",
+                "population": "unknown",
+                "residents": Array [],
+                "terrain": "swamp, jungles",
+              },
+              Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Bespin",
+                "population": "6000000",
+                "residents": Array [
+                  "Lobot",
+                ],
+                "terrain": "gas giant",
+              },
+              Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Endor",
+                "population": "30000000",
+                "residents": Array [
+                  "Wicket Systri Warrick",
+                ],
+                "terrain": "forests, mountains, lakes",
+              },
+              Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Naboo",
+                "population": "4500000000",
+                "residents": Array [
+                  "R2-D2",
+                  "Palpatine",
+                  "Jar Jar Binks",
+                  "Roos Tarpals",
+                  "Rugor Nass",
+                  "Ric Olié",
+                  "Quarsh Panaka",
+                  "Gregar Typho",
+                  "Cordé",
+                  "Dormé",
+                  "Padmé Amidala",
+                ],
+                "terrain": "grassy hills, swamps, forests, mountains",
+              },
+              Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Coruscant",
+                "population": "1000000000000",
+                "residents": Array [
+                  "Finis Valorum",
+                  "Adi Gallia",
+                  "Jocasta Nu",
+                ],
+                "terrain": "cityscape, mountains",
+              },
+              Object {
+                "climate": "temperate",
+                "favorite": false,
+                "name": "Kamino",
+                "population": "1000000000",
+                "residents": Array [
+                  "Boba Fett",
+                  "Lama Su",
+                  "Taun We",
+                ],
+                "terrain": "ocean",
+              },
+              Object {
+                "climate": "temperate, arid",
+                "favorite": false,
+                "name": "Geonosis",
+                "population": "100000000000",
+                "residents": Array [
+                  "Poggle the Lesser",
+                ],
+                "terrain": "rock, desert, mountain, barren",
+              },
+            ],
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`App matches the snapshot if Vehicles has been selected 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <header
+          className="App-header"
+>
+          <h1
+                    className="App-title"
+          >
+                    swapi box
+          </h1>
+          <Navigation
+                    changeCategory={[Function]}
+                    selectedButton="Vehicles"
+          />
+</header>,
+        <Vehicles
+          cardData={
+                    Array [
+                              Object {
+                                "favorite": false,
+                                "model": "Digger Crawler",
+                                "name": "Sand Crawler",
+                                "numberOfPassengers": "30",
+                                "vehicleClass": "wheeled",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "T-16 skyhopper",
+                                "name": "T-16 skyhopper",
+                                "numberOfPassengers": "1",
+                                "vehicleClass": "repulsorcraft",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "X-34 landspeeder",
+                                "name": "X-34 landspeeder",
+                                "numberOfPassengers": "1",
+                                "vehicleClass": "repulsorcraft",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "Twin Ion Engine/Ln Starfighter",
+                                "name": "TIE/LN starfighter",
+                                "numberOfPassengers": "0",
+                                "vehicleClass": "starfighter",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "t-47 airspeeder",
+                                "name": "Snowspeeder",
+                                "numberOfPassengers": "0",
+                                "vehicleClass": "airspeeder",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "TIE/sa bomber",
+                                "name": "TIE bomber",
+                                "numberOfPassengers": "0",
+                                "vehicleClass": "space/planetary bomber",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "All Terrain Armored Transport",
+                                "name": "AT-AT",
+                                "numberOfPassengers": "40",
+                                "vehicleClass": "assault walker",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "All Terrain Scout Transport",
+                                "name": "AT-ST",
+                                "numberOfPassengers": "0",
+                                "vehicleClass": "walker",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "Storm IV Twin-Pod",
+                                "name": "Storm IV Twin-Pod cloud car",
+                                "numberOfPassengers": "0",
+                                "vehicleClass": "repulsorcraft",
+                              },
+                              Object {
+                                "favorite": false,
+                                "model": "Modified Luxury Sail Barge",
+                                "name": "Sail barge",
+                                "numberOfPassengers": "500",
+                                "vehicleClass": "sail barge",
+                              },
+                            ]
+          }
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1
+              className="App-title"
+>
+              swapi box
+</h1>,
+            <Navigation
+              changeCategory={[Function]}
+              selectedButton="Vehicles"
+/>,
+          ],
+          "className": "App-header",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "swapi box",
+              "className": "App-title",
+            },
+            "ref": null,
+            "rendered": "swapi box",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "changeCategory": [Function],
+              "selectedButton": "Vehicles",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "header",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "cardData": Array [
+            Object {
+              "favorite": false,
+              "model": "Digger Crawler",
+              "name": "Sand Crawler",
+              "numberOfPassengers": "30",
+              "vehicleClass": "wheeled",
+            },
+            Object {
+              "favorite": false,
+              "model": "T-16 skyhopper",
+              "name": "T-16 skyhopper",
+              "numberOfPassengers": "1",
+              "vehicleClass": "repulsorcraft",
+            },
+            Object {
+              "favorite": false,
+              "model": "X-34 landspeeder",
+              "name": "X-34 landspeeder",
+              "numberOfPassengers": "1",
+              "vehicleClass": "repulsorcraft",
+            },
+            Object {
+              "favorite": false,
+              "model": "Twin Ion Engine/Ln Starfighter",
+              "name": "TIE/LN starfighter",
+              "numberOfPassengers": "0",
+              "vehicleClass": "starfighter",
+            },
+            Object {
+              "favorite": false,
+              "model": "t-47 airspeeder",
+              "name": "Snowspeeder",
+              "numberOfPassengers": "0",
+              "vehicleClass": "airspeeder",
+            },
+            Object {
+              "favorite": false,
+              "model": "TIE/sa bomber",
+              "name": "TIE bomber",
+              "numberOfPassengers": "0",
+              "vehicleClass": "space/planetary bomber",
+            },
+            Object {
+              "favorite": false,
+              "model": "All Terrain Armored Transport",
+              "name": "AT-AT",
+              "numberOfPassengers": "40",
+              "vehicleClass": "assault walker",
+            },
+            Object {
+              "favorite": false,
+              "model": "All Terrain Scout Transport",
+              "name": "AT-ST",
+              "numberOfPassengers": "0",
+              "vehicleClass": "walker",
+            },
+            Object {
+              "favorite": false,
+              "model": "Storm IV Twin-Pod",
+              "name": "Storm IV Twin-Pod cloud car",
+              "numberOfPassengers": "0",
+              "vehicleClass": "repulsorcraft",
+            },
+            Object {
+              "favorite": false,
+              "model": "Modified Luxury Sail Barge",
+              "name": "Sail barge",
+              "numberOfPassengers": "500",
+              "vehicleClass": "sail barge",
+            },
+          ],
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <header
+            className="App-header"
+>
+            <h1
+                        className="App-title"
+            >
+                        swapi box
+            </h1>
+            <Navigation
+                        changeCategory={[Function]}
+                        selectedButton="Vehicles"
+            />
+</header>,
+          <Vehicles
+            cardData={
+                        Array [
+                                    Object {
+                                      "favorite": false,
+                                      "model": "Digger Crawler",
+                                      "name": "Sand Crawler",
+                                      "numberOfPassengers": "30",
+                                      "vehicleClass": "wheeled",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "T-16 skyhopper",
+                                      "name": "T-16 skyhopper",
+                                      "numberOfPassengers": "1",
+                                      "vehicleClass": "repulsorcraft",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "X-34 landspeeder",
+                                      "name": "X-34 landspeeder",
+                                      "numberOfPassengers": "1",
+                                      "vehicleClass": "repulsorcraft",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "Twin Ion Engine/Ln Starfighter",
+                                      "name": "TIE/LN starfighter",
+                                      "numberOfPassengers": "0",
+                                      "vehicleClass": "starfighter",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "t-47 airspeeder",
+                                      "name": "Snowspeeder",
+                                      "numberOfPassengers": "0",
+                                      "vehicleClass": "airspeeder",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "TIE/sa bomber",
+                                      "name": "TIE bomber",
+                                      "numberOfPassengers": "0",
+                                      "vehicleClass": "space/planetary bomber",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "All Terrain Armored Transport",
+                                      "name": "AT-AT",
+                                      "numberOfPassengers": "40",
+                                      "vehicleClass": "assault walker",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "All Terrain Scout Transport",
+                                      "name": "AT-ST",
+                                      "numberOfPassengers": "0",
+                                      "vehicleClass": "walker",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "Storm IV Twin-Pod",
+                                      "name": "Storm IV Twin-Pod cloud car",
+                                      "numberOfPassengers": "0",
+                                      "vehicleClass": "repulsorcraft",
+                                    },
+                                    Object {
+                                      "favorite": false,
+                                      "model": "Modified Luxury Sail Barge",
+                                      "name": "Sail barge",
+                                      "numberOfPassengers": "500",
+                                      "vehicleClass": "sail barge",
+                                    },
+                                  ]
+            }
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1
+                className="App-title"
+>
+                swapi box
+</h1>,
+              <Navigation
+                changeCategory={[Function]}
+                selectedButton="Vehicles"
+/>,
+            ],
+            "className": "App-header",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "swapi box",
+                "className": "App-title",
+              },
+              "ref": null,
+              "rendered": "swapi box",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "changeCategory": [Function],
+                "selectedButton": "Vehicles",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "header",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "cardData": Array [
+              Object {
+                "favorite": false,
+                "model": "Digger Crawler",
+                "name": "Sand Crawler",
+                "numberOfPassengers": "30",
+                "vehicleClass": "wheeled",
+              },
+              Object {
+                "favorite": false,
+                "model": "T-16 skyhopper",
+                "name": "T-16 skyhopper",
+                "numberOfPassengers": "1",
+                "vehicleClass": "repulsorcraft",
+              },
+              Object {
+                "favorite": false,
+                "model": "X-34 landspeeder",
+                "name": "X-34 landspeeder",
+                "numberOfPassengers": "1",
+                "vehicleClass": "repulsorcraft",
+              },
+              Object {
+                "favorite": false,
+                "model": "Twin Ion Engine/Ln Starfighter",
+                "name": "TIE/LN starfighter",
+                "numberOfPassengers": "0",
+                "vehicleClass": "starfighter",
+              },
+              Object {
+                "favorite": false,
+                "model": "t-47 airspeeder",
+                "name": "Snowspeeder",
+                "numberOfPassengers": "0",
+                "vehicleClass": "airspeeder",
+              },
+              Object {
+                "favorite": false,
+                "model": "TIE/sa bomber",
+                "name": "TIE bomber",
+                "numberOfPassengers": "0",
+                "vehicleClass": "space/planetary bomber",
+              },
+              Object {
+                "favorite": false,
+                "model": "All Terrain Armored Transport",
+                "name": "AT-AT",
+                "numberOfPassengers": "40",
+                "vehicleClass": "assault walker",
+              },
+              Object {
+                "favorite": false,
+                "model": "All Terrain Scout Transport",
+                "name": "AT-ST",
+                "numberOfPassengers": "0",
+                "vehicleClass": "walker",
+              },
+              Object {
+                "favorite": false,
+                "model": "Storm IV Twin-Pod",
+                "name": "Storm IV Twin-Pod cloud car",
+                "numberOfPassengers": "0",
+                "vehicleClass": "repulsorcraft",
+              },
+              Object {
+                "favorite": false,
+                "model": "Modified Luxury Sail Barge",
+                "name": "Sail barge",
+                "numberOfPassengers": "500",
+                "vehicleClass": "sail barge",
+              },
+            ],
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

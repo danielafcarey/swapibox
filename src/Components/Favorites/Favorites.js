@@ -35,6 +35,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item4={ `Residents: ${residents.join(', ')}` }
           favorite={ favorite }
           toggleFavorite={ toggleFavorite }
+          key={ id }
         />
       )
 
@@ -50,6 +51,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item3={ `Total Passengers: ${numberOfPassengers}` }
           favorite={ favorite }
           toggleFavorite={ toggleFavorite }
+          key={ id }
         />
       )
 
@@ -59,14 +61,15 @@ const Favorites = ({ cardData, toggleFavorite }) => {
 
   })
    return (
-      <div className="Favorites">
+      <div className="card-container Favorites">
         { favoriteCards }
       </div>
     );
 }
 
 Favorites.propTypes = {
-  cardData: PropTypes.arrayOf(PropTypes.object).isRequired
+  cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  toggleFavorite: PropTypes.func.isRequired
 }
 
 export default Favorites;

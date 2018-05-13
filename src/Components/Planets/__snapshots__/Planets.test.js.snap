@@ -1,0 +1,318 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Planets matches the snapshot with cards 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Planets
+    cardData={
+        Array [
+            Object {
+              "climate": "hot",
+              "favorite": false,
+              "id": "id",
+              "name": "Daniela",
+              "population": 7000000000,
+              "residents": Array [
+                "pupper",
+              ],
+              "terrain": "rocks",
+            },
+            Object {
+              "climate": "hot",
+              "favorite": false,
+              "id": "id",
+              "name": "Daniela",
+              "population": 7000000000,
+              "residents": Array [
+                "pupper",
+              ],
+              "terrain": "rocks",
+            },
+          ]
+    }
+    toggleFavorite={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          favorite={false}
+          id="id"
+          item1="Population: 7000000000"
+          item2="Climate: hot"
+          item3="Terrain: rocks"
+          item4="Residents: pupper"
+          title="Daniela"
+          toggleFavorite={[Function]}
+/>,
+        <Card
+          favorite={false}
+          id="id"
+          item1="Population: 7000000000"
+          item2="Climate: hot"
+          item3="Terrain: rocks"
+          item4="Residents: pupper"
+          title="Daniela"
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "card-container Planets",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "id",
+        "nodeType": "function",
+        "props": Object {
+          "favorite": false,
+          "id": "id",
+          "item1": "Population: 7000000000",
+          "item2": "Climate: hot",
+          "item3": "Terrain: rocks",
+          "item4": "Residents: pupper",
+          "title": "Daniela",
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "id",
+        "nodeType": "function",
+        "props": Object {
+          "favorite": false,
+          "id": "id",
+          "item1": "Population: 7000000000",
+          "item2": "Climate: hot",
+          "item3": "Terrain: rocks",
+          "item4": "Residents: pupper",
+          "title": "Daniela",
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            favorite={false}
+            id="id"
+            item1="Population: 7000000000"
+            item2="Climate: hot"
+            item3="Terrain: rocks"
+            item4="Residents: pupper"
+            title="Daniela"
+            toggleFavorite={[Function]}
+/>,
+          <Card
+            favorite={false}
+            id="id"
+            item1="Population: 7000000000"
+            item2="Climate: hot"
+            item3="Terrain: rocks"
+            item4="Residents: pupper"
+            title="Daniela"
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "card-container Planets",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "id",
+          "nodeType": "function",
+          "props": Object {
+            "favorite": false,
+            "id": "id",
+            "item1": "Population: 7000000000",
+            "item2": "Climate: hot",
+            "item3": "Terrain: rocks",
+            "item4": "Residents: pupper",
+            "title": "Daniela",
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "id",
+          "nodeType": "function",
+          "props": Object {
+            "favorite": false,
+            "id": "id",
+            "item1": "Population: 7000000000",
+            "item2": "Climate: hot",
+            "item3": "Terrain: rocks",
+            "item4": "Residents: pupper",
+            "title": "Daniela",
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Planets matches the snapshot with one card 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Planets
+    cardData={
+        Array [
+            Object {
+              "climate": "hot",
+              "favorite": false,
+              "id": "id",
+              "name": "Daniela",
+              "population": 7000000000,
+              "residents": Array [
+                "pupper",
+              ],
+              "terrain": "rocks",
+            },
+          ]
+    }
+    toggleFavorite={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          favorite={false}
+          id="id"
+          item1="Population: 7000000000"
+          item2="Climate: hot"
+          item3="Terrain: rocks"
+          item4="Residents: pupper"
+          title="Daniela"
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "card-container Planets",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "id",
+        "nodeType": "function",
+        "props": Object {
+          "favorite": false,
+          "id": "id",
+          "item1": "Population: 7000000000",
+          "item2": "Climate: hot",
+          "item3": "Terrain: rocks",
+          "item4": "Residents: pupper",
+          "title": "Daniela",
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            favorite={false}
+            id="id"
+            item1="Population: 7000000000"
+            item2="Climate: hot"
+            item3="Terrain: rocks"
+            item4="Residents: pupper"
+            title="Daniela"
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "card-container Planets",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "id",
+          "nodeType": "function",
+          "props": Object {
+            "favorite": false,
+            "id": "id",
+            "item1": "Population: 7000000000",
+            "item2": "Climate: hot",
+            "item3": "Terrain: rocks",
+            "item4": "Residents: pupper",
+            "title": "Daniela",
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

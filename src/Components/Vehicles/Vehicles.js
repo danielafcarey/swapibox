@@ -16,6 +16,7 @@ const Vehicles = ({ cardData, toggleFavorite }) => {
         item3={ `Total Passengers: ${numberOfPassengers}` }
         favorite={ favorite }
         toggleFavorite={ toggleFavorite }
+        key={ id }
       />
     )
   })
@@ -28,7 +29,8 @@ const Vehicles = ({ cardData, toggleFavorite }) => {
 }
 
 Vehicles.propTypes = {
-  cardData: PropTypes.arrayOf(PropTypes.object)
+  cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  toggleFavorite: PropTypes.func.isRequired
 }
 
 export default Vehicles;

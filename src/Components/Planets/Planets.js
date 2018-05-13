@@ -17,6 +17,7 @@ const Planets = ({ cardData, toggleFavorite }) => {
         item4={ `Residents: ${residents.join(', ')}` }
         favorite={ favorite }
         toggleFavorite={ toggleFavorite }
+        key={ id }
       />
     )
   })
@@ -29,7 +30,8 @@ const Planets = ({ cardData, toggleFavorite }) => {
 }
 
 Planets.propTypes = {
-  cardData: PropTypes.arrayOf(PropTypes.object).isRequired
+  cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  toggleFavorite: PropTypes.func.isRequired
 }
 
 

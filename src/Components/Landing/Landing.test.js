@@ -2,6 +2,17 @@ import React from 'react';
 import { shallow } from 'enzyme';
 import Landing from './Landing';
 
-it('renders without crashing', () => {
-  // shallow(<Landing />);
+describe('Landing', () => {
+
+  it('matches the snapshot', () => {
+    const mockCrawlData = {
+      crawlText: 'i am a movie', 
+      title: 'moviem',
+      releaseDate: 'today'
+    }
+    const wrapper = shallow(<Landing crawlData={ mockCrawlData } />)
+
+    expect(wrapper).toMatchSnapshot();
+  });
+
 });
