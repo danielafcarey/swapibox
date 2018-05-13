@@ -3,6 +3,8 @@ import { shallow, mount } from 'enzyme';
 import App from './App';
 import ApiHelper from '../../Api.js';
 const apiHelper = new ApiHelper();
+import LocalStorageMock from '../../mockdata/localStorageMock.js';
+global.localStorage = new LocalStorageMock;
 import { 
   peopleReturn, 
   planetsReturn, 
@@ -26,6 +28,7 @@ jest.mock('../../Api.js', () => {
   });
 });
 
+
 describe('App', () => {
   let app;
   let appInst;
@@ -39,11 +42,17 @@ describe('App', () => {
     expect(app).toMatchSnapshot();
   });
 
-  it('sets the crawl data in state', async () => {
-
+  it('sets the crawl data in state after first render', async () => {
     expect(app.state('crawlData')).toHaveProperty('crawlText');
     expect(app.state('crawlData')).toHaveProperty('title');
     expect(app.state('crawlData')).toHaveProperty('releaseDate');
+  })
+
+  it('matches the snapshot if there are favorites in localStorage', () => {
+    const mockStringifiedFavorites = JSON.stringify(mockFavorites);
+    localStorage.setItem('SWAPI', mockStringifiedFavorites);
+
+    expect(app).toMatchSnapshot();
   })
 
   it('updates the loading state when a button is clicked', () => {
@@ -223,6 +232,19 @@ describe('App', () => {
   it('calls getCardsDisplay if there is selectedData in state', () => {
     appInst.getCardsDisplay = jest.fn();
     app.setState({ selectedData: [{ id: 1 }] });
+
+    appInst.getDisplayElements();
+
+    expect(appInst.getCardsDisplay).toHaveBeenCalled();
+  })
+
+  it('calls getCardsDisplay if there are favorites in state', () => {
+    appInst.getCardsDisplay = jest.fn();
+    app.setState({ 
+      favorites: [{ id: 1 }],
+      selectedData: [{ id: 1 }],
+      selectedButton: 'Favorites'
+    });
 
     appInst.getDisplayElements();
 

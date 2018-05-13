@@ -31,17 +31,11 @@ class App extends Component {
     this.setState({ crawlData });
   }
 
-//   componentDidUpdate = () => {
-//     this.setFavoritesInStorage();
-//   }
-
-  componenetWillUnmount = () => {
-    this.setFavoritesInStorage();
-  }
-
   getFavoritesFromStorage = () => {
     const favoritesFromStorage = JSON.parse(localStorage.getItem('SWAPI'));
-    this.setState({ favorites: favoritesFromStorage }); 
+    if (favoritesFromStorage) {
+      this.setState({ favorites: favoritesFromStorage }); 
+    }
   }
 
   setFavoritesInStorage = () => {
@@ -146,31 +140,37 @@ class App extends Component {
   }
 
   getDisplayElements = () => {
-    const { selectedData, crawlData, selectedButton } = this.state;
-    if (selectedData.length === 0 && !selectedButton ) {
+    const { selectedData, crawlData, selectedButton, favorites } = this.state;
+    if ((selectedData.length === 0 && !selectedButton) || !selectedData ) {
       return <Landing crawlData={ crawlData } /> ;
-    } else {
+    } else if (selectedData.length || favorites.length) {
       return this.getCardsDisplay();        
     }
   }
 
   getCardsDisplay = () => {
     const { selectedButton, selectedData, favorites } = this.state;
-    if (selectedButton === 'People' && selectedData[0].homeworld) {
+    if (selectedButton === 'People' &&
+      selectedData.length &&
+      selectedData[0].hasOwnProperty('homeworld')) {
       return (
         <People 
           cardData={ selectedData } 
           toggleFavorite={ this.toggleFavorite }  
         />
       );    
-    } else if (selectedButton === 'Planets' && selectedData[0].climate) {
+    } else if (selectedButton === 'Planets' && 
+      selectedData.length &&
+      selectedData[0].hasOwnProperty('climate')) {
       return (
         <Planets 
           cardData={ selectedData }
           toggleFavorite={ this.toggleFavorite } 
         />
       );
-    } else if (selectedButton === 'Vehicles' && selectedData[0].model) {
+    } else if (selectedButton === 'Vehicles' && 
+      selectedData.length &&
+      selectedData[0].hasOwnProperty('model')) {
       return (
         <Vehicles 
           cardData={ selectedData } 
