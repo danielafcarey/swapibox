@@ -7,7 +7,7 @@ SWAPI Box uses the Star Wars API to display information about the people, planet
 ### Tools 
 
 * Star Wars data from [SWAPI](https://swapi.co/documentation)
-* Layout inspiration from []
+* Star Wars icons from [Jory Raphael](https://dribbble.com/shots/1308281-Free-Star-Wars-Icons)
 
 ### *Example* 
 
