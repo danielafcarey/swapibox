@@ -3,34 +3,60 @@ import { shallow } from 'enzyme';
 import Navigation from './Navigation';
 
 describe('Navigation', () => {
+  let props;
+  let wrapper;
+
+  beforeEach(() => {
+    props = {
+      changeCategory: jest.fn(),
+      selectedButton: ''
+    };
+    wrapper = shallow(<Navigation { ...props } />) 
+  })
 
   it('should match the snapshot', () => {
-    const app = shallow(
-      <Navigation 
-        changeCategory={ jest.fn() } 
-        selectedButton={ 'people' }
-      />);
-    expect(app).toMatchSnapshot();
+    props.selectedButton = 'People';
+
+    expect(wrapper).toMatchSnapshot();
   })
 
   it('should match the snapshot if no button is selected', () => {
-    const app = shallow(
-      <Navigation 
-        changeCategory={ jest.fn() } 
-        selectedButton={ '' }
-      />);
-    expect(app).toMatchSnapshot();
-
+    expect(wrapper).toMatchSnapshot();
   })
 
-  // it('should call the prop function when a button is clicked with an argument of the event.target.name', () => {
-  //   const spy = jest.fn();
-  //   const app = shallow(<Navigation changeCategory={ spy } />);
-  //   const mockEvent = { target: { name: 'people' } }
+  it('should change the value of peopleClass if the selectedButton is People', () => {
+    props.selectedButton = 'People';
+    wrapper = shallow(<Navigation { ...props } />)
+    const selectedButton = wrapper.find('button.selected');
 
-  //   app.find('.people-button').simulate('click');
-  //   expect(spy).toHaveBeenCalledWith(mockEvent.target.name); 
-  // })
+    expect(selectedButton.props().name).toEqual('People');
+  })
+
+  it('should change the value of planetsClass if the selectedButton is Planets', () => {
+    props.selectedButton = 'Planets';
+    wrapper = shallow(<Navigation { ...props } />)
+    const selectedButton = wrapper.find('button.selected');
+
+    expect(selectedButton.props().name).toEqual('Planets');
+  })
+
+  it('should change the value of vehiclesClass if the selectedButton is Vehicles', () => {
+    props.selectedButton = 'Vehicles';
+    wrapper = shallow(<Navigation { ...props } />)
+    const selectedButton = wrapper.find('button.selected');
+
+    expect(selectedButton.props().name).toEqual('Vehicles');
+  })
+
+  it('should change the value of favoritesClass if the selectedButton is Favorites', () => {
+    props.selectedButton = 'Favorites';
+    wrapper = shallow(<Navigation { ...props } />)
+    const selectedButton = wrapper.find('button.selected');
+
+    expect(selectedButton.props().name).toEqual('Favorites');
+  })
+
+
 
 })
 

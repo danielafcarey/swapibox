@@ -40,6 +40,7 @@ ShallowWrapper {
           item1="Homeworld: earth"
           item2="Population: 1"
           item3="Species: humannnn"
+          section="People"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -58,6 +59,7 @@ ShallowWrapper {
           "item1": "Homeworld: earth",
           "item2": "Population: 1",
           "item3": "Species: humannnn",
+          "section": "People",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -81,6 +83,7 @@ ShallowWrapper {
             item1="Homeworld: earth"
             item2="Population: 1"
             item3="Species: humannnn"
+            section="People"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -99,6 +102,7 @@ ShallowWrapper {
             "item1": "Homeworld: earth",
             "item2": "Population: 1",
             "item3": "Species: humannnn",
+            "section": "People",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -162,6 +166,7 @@ ShallowWrapper {
           item2="Climate: hot"
           item3="Terrain: soft"
           item4="Residents: me"
+          section="Planets"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -181,6 +186,7 @@ ShallowWrapper {
           "item2": "Climate: hot",
           "item3": "Terrain: soft",
           "item4": "Residents: me",
+          "section": "Planets",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -205,6 +211,7 @@ ShallowWrapper {
             item2="Climate: hot"
             item3="Terrain: soft"
             item4="Residents: me"
+            section="Planets"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -224,6 +231,7 @@ ShallowWrapper {
             "item2": "Climate: hot",
             "item3": "Terrain: soft",
             "item4": "Residents: me",
+            "section": "Planets",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -283,6 +291,7 @@ ShallowWrapper {
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
+          section="Vehicles"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -301,6 +310,7 @@ ShallowWrapper {
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
+          "section": "Vehicles",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -324,6 +334,7 @@ ShallowWrapper {
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
+            section="Vehicles"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -342,6 +353,7 @@ ShallowWrapper {
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
+            "section": "Vehicles",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -422,6 +434,7 @@ ShallowWrapper {
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
+          section="Vehicles"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -432,6 +445,7 @@ ShallowWrapper {
           item2="Climate: hot"
           item3="Terrain: soft"
           item4="Residents: me"
+          section="Planets"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -441,6 +455,7 @@ ShallowWrapper {
           item1="Homeworld: earth"
           item2="Population: 1"
           item3="Species: humannnn"
+          section="People"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -459,6 +474,7 @@ ShallowWrapper {
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
+          "section": "Vehicles",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -477,6 +493,7 @@ ShallowWrapper {
           "item2": "Climate: hot",
           "item3": "Terrain: soft",
           "item4": "Residents: me",
+          "section": "Planets",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -494,6 +511,7 @@ ShallowWrapper {
           "item1": "Homeworld: earth",
           "item2": "Population: 1",
           "item3": "Species: humannnn",
+          "section": "People",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -517,6 +535,7 @@ ShallowWrapper {
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
+            section="Vehicles"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -527,6 +546,7 @@ ShallowWrapper {
             item2="Climate: hot"
             item3="Terrain: soft"
             item4="Residents: me"
+            section="Planets"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -536,6 +556,7 @@ ShallowWrapper {
             item1="Homeworld: earth"
             item2="Population: 1"
             item3="Species: humannnn"
+            section="People"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -554,6 +575,7 @@ ShallowWrapper {
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
+            "section": "Vehicles",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -572,6 +594,7 @@ ShallowWrapper {
             "item2": "Climate: hot",
             "item3": "Terrain: soft",
             "item4": "Residents: me",
+            "section": "Planets",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -589,6 +612,7 @@ ShallowWrapper {
             "item1": "Homeworld: earth",
             "item2": "Population: 1",
             "item3": "Species: humannnn",
+            "section": "People",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },

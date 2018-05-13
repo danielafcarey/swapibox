@@ -19,7 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <img
         alt="Loading. Please wait."
-        src="tie-fighter-2.gif"
+        src="tie-fighter-yellow.png"
 />,
       "className": "loading",
     },
@@ -30,7 +30,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "alt": "Loading. Please wait.",
-        "src": "tie-fighter-2.gif",
+        "src": "tie-fighter-yellow.png",
       },
       "ref": null,
       "rendered": null,
@@ -46,7 +46,7 @@ ShallowWrapper {
       "props": Object {
         "children": <img
           alt="Loading. Please wait."
-          src="tie-fighter-2.gif"
+          src="tie-fighter-yellow.png"
 />,
         "className": "loading",
       },
@@ -57,7 +57,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "alt": "Loading. Please wait.",
-          "src": "tie-fighter-2.gif",
+          "src": "tie-fighter-yellow.png",
         },
         "ref": null,
         "rendered": null,

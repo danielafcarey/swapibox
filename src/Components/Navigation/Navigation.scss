@@ -16,12 +16,13 @@
     }
 
     &:focus {
-      font-weight: bold;
       outline: none;
-      color: #feda4a;
-
     }
+
   }
+    button.selected {
+      color: #feda4a;
+    }
 
   .showSelectMessage {
     display: block;
