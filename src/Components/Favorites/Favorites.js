@@ -61,7 +61,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
 
   })
    return (
-      <div className="Favorites">
+      <div className="card-container Favorites">
         { favoriteCards }
       </div>
     );
