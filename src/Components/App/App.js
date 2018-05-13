@@ -117,15 +117,16 @@ class App extends Component {
 
   removeFromFavorites = (cardId) => {
     const newFavorites = this.state.favorites.filter(favorite => {
-      return favorite.id !== cardId
-    })
+      return favorite.id !== cardId;
+    });
 
-    this.setState({ favorites: newFavorites })
+    this.setState({ favorites: newFavorites });
   }
 
   getDisplayElements = () => {
-    if (this.state.selectedData.length === 0) {
-      return <Landing crawlData={ this.state.crawlData }/> 
+    const { selectedData, crawlData } = this.state;
+    if (selectedData.length === 0) {
+      return <Landing crawlData={ crawlData } /> ;
     } else {
       return this.getCardsDisplay();        
     }
@@ -165,14 +166,16 @@ class App extends Component {
   }
 
   render() {
-    const { selectedButton, loading } = this.state;
+    const { selectedButton, loading, favorites } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">swapi box</h1>
           <Navigation 
             changeCategory={ this.changeCategory }
-            selectedButton={ selectedButton }/>
+            selectedButton={ selectedButton }
+            favoritesLength={ favorites.length }
+          />
         </header>
         { loading ? <Loading /> : this.getDisplayElements() } 
       </div>
