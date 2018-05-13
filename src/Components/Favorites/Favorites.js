@@ -17,6 +17,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item2={ `Population: ${homeworldPop}` }
           item3={ `Species: ${species.join(', ')}` }
           favorite={ favorite }
+          section='People'
           toggleFavorite={ toggleFavorite }
           key={ id }
         />
@@ -34,6 +35,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item3={ `Terrain: ${terrain}` }
           item4={ `Residents: ${residents.join(', ')}` }
           favorite={ favorite }
+          section='Planets'
           toggleFavorite={ toggleFavorite }
           key={ id }
         />
@@ -50,6 +52,7 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item2={ `Model: ${model}` }
           item3={ `Total Passengers: ${numberOfPassengers}` }
           favorite={ favorite }
+          section='Vehicles'
           toggleFavorite={ toggleFavorite }
           key={ id }
         />

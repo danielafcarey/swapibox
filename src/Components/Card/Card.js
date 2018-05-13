@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const Card = (props) => {
   const {
     id,
@@ -11,6 +10,7 @@ const Card = (props) => {
     item3,
     item4,
     favorite,
+    section,
     toggleFavorite
   } = props;
 
@@ -22,7 +22,7 @@ const Card = (props) => {
   }
 
   return (
-    <div className="Card">
+    <div className={`Card ${section}`}>
       <h3 className="title">{ title }</h3>
       <button 
         onClick={ () => toggleFavorite(id) }
@@ -51,6 +51,7 @@ Card.propTypes = {
   item3: PropTypes.string.isRequired,
   item4: PropTypes.string,
   favorite: PropTypes.bool.isRequired,
+  section: PropTypes.string.isRequired,
   toggleFavorite: PropTypes.func.isRequired
 }
 

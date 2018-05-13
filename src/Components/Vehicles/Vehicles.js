@@ -15,6 +15,7 @@ const Vehicles = ({ cardData, toggleFavorite }) => {
         item2={ `Model: ${model}` }
         item3={ `Total Passengers: ${numberOfPassengers}` }
         favorite={ favorite }
+        section='Vehicles'
         toggleFavorite={ toggleFavorite }
         key={ id }
       />
