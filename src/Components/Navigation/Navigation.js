@@ -5,7 +5,8 @@ const Navigation = (props) => {
   const { 
     selectedButton, 
     changeCategory, 
-    favoritesLength } = props;
+    favoritesLength 
+  } = props;
   let showSelectMessage;
   selectedButton ? 
     showSelectMessage = 'hide' : 
@@ -44,7 +45,8 @@ const Navigation = (props) => {
 
 Navigation.propTypes = {
   selectedButton: PropTypes.string.isRequired,
-  changeCategory: PropTypes.func.isRequired
+  changeCategory: PropTypes.func.isRequired,
+  favoritesLength: PropTypes.number.isRequired
 }
 
 export default Navigation;
