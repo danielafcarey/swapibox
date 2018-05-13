@@ -37,13 +37,33 @@ describe('App', () => {
 
   it('sets the crawl data in state', async () => {
 
-    expect(app.state('crawlData')).toHaveProperty('crawlText')
-    expect(app.state('crawlData')).toHaveProperty('title')
-    expect(app.state('crawlData')).toHaveProperty('releaseDate')
+    expect(app.state('crawlData')).toHaveProperty('crawlText');
+    expect(app.state('crawlData')).toHaveProperty('title');
+    expect(app.state('crawlData')).toHaveProperty('releaseDate');
+  })
+
+  it('updates the loading state when a button is clicked', () => {
+    const mockEvent = { target: { name: 'People' } };
+    appInst.getPeopleData = jest.fn();
+
+    expect(app.state('loading')).toEqual(false);
+
+    appInst.changeCategory(mockEvent);
+
+    expect(app.state('loading')).toEqual(true);
+  })
+
+  it('updates the loading state back to false if favorites button clicked', () => {
+    const mockEvent = { target: { name: 'Favorites' } };
+    appInst.getCardsDisplay = jest.fn();
+
+    appInst.changeCategory(mockEvent);
+
+    expect(app.state('loading')).toEqual(false);
   })
  
   it('calls getPeopleData if the people button is clicked', () => {
-    const mockEvent = { target: { name: 'People' } }
+    const mockEvent = { target: { name: 'People' } };
     appInst.getPeopleData = jest.fn();
 
     appInst.changeCategory(mockEvent);
@@ -52,7 +72,7 @@ describe('App', () => {
   })
 
   it('calls getPlanetsData if the planets button is clicked', () => {
-    const mockEvent = { target: { name: 'Planets' } }
+    const mockEvent = { target: { name: 'Planets' } };
     appInst.getPlanetsData = jest.fn();
 
     appInst.changeCategory(mockEvent);
@@ -61,7 +81,7 @@ describe('App', () => {
   })
 
   it('calls getVehiclesData if the vehicles button is clicked', () => {
-    const mockEvent = { target: { name: 'Vehicles' } }
+    const mockEvent = { target: { name: 'Vehicles' } };
     appInst.getVehiclesData = jest.fn();
 
     appInst.changeCategory(mockEvent);
@@ -165,8 +185,8 @@ describe('App', () => {
   })
 
   it('calls removeFromFavorites with the cardId if it is not marked as a favorite in selectedData', () => {
-    const mockSelectedData = [{ id: 2, favorite: false }]
-    appInst.setState({ selectedData: mockSelectedData })
+    const mockSelectedData = [{ id: 2, favorite: false }];
+    appInst.setState({ selectedData: mockSelectedData });
     appInst.removeFromFavorites = jest.fn();
 
     appInst.updateFavoritesInState(2);
@@ -198,7 +218,7 @@ describe('App', () => {
 
   it('calls getCardsDisplay if there is selectedData in state', () => {
     appInst.getCardsDisplay = jest.fn();
-    app.setState({ selectedData: [{ id: 1 }] })
+    app.setState({ selectedData: [{ id: 1 }] });
 
     appInst.getDisplayElements();
 
@@ -206,24 +226,24 @@ describe('App', () => {
   })
 
   it('matches the snapshot if People has been selected', () => {
-    app.setState({ selectedData: peopleReturn, selectedButton: 'People' })
+    app.setState({ selectedData: peopleReturn, selectedButton: 'People' });
 
     expect(app).toMatchSnapshot();
   })
   it('matches the snapshot if Planets has been selected', () => {
-    app.setState({ selectedData: planetsReturn, selectedButton: 'Planets' })
+    app.setState({ selectedData: planetsReturn, selectedButton: 'Planets' });
 
     expect(app).toMatchSnapshot();
   })
 
   it('matches the snapshot if Vehicles has been selected', () => {
-    app.setState({ selectedData: vehiclesReturn, selectedButton: 'Vehicles' })
+    app.setState({ selectedData: vehiclesReturn, selectedButton: 'Vehicles' });
 
     expect(app).toMatchSnapshot();
   })
 
   it('matches the snapshot if Favorites has been selected', () => {
-    app.setState({ favorites: peopleReturn, selectedButton: 'Favorites' })
+    app.setState({ favorites: peopleReturn, selectedButton: 'Favorites' });
 
     expect(app).toMatchSnapshot();
   })

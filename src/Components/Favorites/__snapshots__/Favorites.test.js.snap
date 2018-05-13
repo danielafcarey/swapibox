@@ -44,7 +44,7 @@ ShallowWrapper {
           toggleFavorite={[Function]}
 />,
       ],
-      "className": "Favorites",
+      "className": "card-container Favorites",
     },
     "ref": null,
     "rendered": Array [
@@ -85,7 +85,7 @@ ShallowWrapper {
             toggleFavorite={[Function]}
 />,
         ],
-        "className": "Favorites",
+        "className": "card-container Favorites",
       },
       "ref": null,
       "rendered": Array [
@@ -166,7 +166,7 @@ ShallowWrapper {
           toggleFavorite={[Function]}
 />,
       ],
-      "className": "Favorites",
+      "className": "card-container Favorites",
     },
     "ref": null,
     "rendered": Array [
@@ -209,7 +209,7 @@ ShallowWrapper {
             toggleFavorite={[Function]}
 />,
         ],
-        "className": "Favorites",
+        "className": "card-container Favorites",
       },
       "ref": null,
       "rendered": Array [
@@ -287,7 +287,7 @@ ShallowWrapper {
           toggleFavorite={[Function]}
 />,
       ],
-      "className": "Favorites",
+      "className": "card-container Favorites",
     },
     "ref": null,
     "rendered": Array [
@@ -328,7 +328,7 @@ ShallowWrapper {
             toggleFavorite={[Function]}
 />,
         ],
-        "className": "Favorites",
+        "className": "card-container Favorites",
       },
       "ref": null,
       "rendered": Array [
@@ -445,7 +445,7 @@ ShallowWrapper {
           toggleFavorite={[Function]}
 />,
       ],
-      "className": "Favorites",
+      "className": "card-container Favorites",
     },
     "ref": null,
     "rendered": Array [
@@ -540,7 +540,7 @@ ShallowWrapper {
             toggleFavorite={[Function]}
 />,
         ],
-        "className": "Favorites",
+        "className": "card-container Favorites",
       },
       "ref": null,
       "rendered": Array [
