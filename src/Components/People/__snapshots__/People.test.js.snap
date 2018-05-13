@@ -1,0 +1,303 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`People matches the snapshot with cards 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <People
+    cardData={
+        Array [
+            Object {
+              "favorite": false,
+              "homeworld": "Earth",
+              "homeworldPop": 7000000000,
+              "id": 1,
+              "name": "Daniela",
+              "species": Array [
+                "pupper",
+              ],
+            },
+            Object {
+              "favorite": false,
+              "homeworld": "Earth",
+              "homeworldPop": 7000000000,
+              "id": 1,
+              "name": "Daniela",
+              "species": Array [
+                "pupper",
+              ],
+            },
+          ]
+    }
+    toggleFavorite={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          favorite={false}
+          id={1}
+          item1="Homeworld: Earth"
+          item2="Population: 7000000000"
+          item3="Species: pupper"
+          title="Daniela"
+          toggleFavorite={[Function]}
+/>,
+        <Card
+          favorite={false}
+          id={1}
+          item1="Homeworld: Earth"
+          item2="Population: 7000000000"
+          item3="Species: pupper"
+          title="Daniela"
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "card-container People",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "favorite": false,
+          "id": 1,
+          "item1": "Homeworld: Earth",
+          "item2": "Population: 7000000000",
+          "item3": "Species: pupper",
+          "title": "Daniela",
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "favorite": false,
+          "id": 1,
+          "item1": "Homeworld: Earth",
+          "item2": "Population: 7000000000",
+          "item3": "Species: pupper",
+          "title": "Daniela",
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            favorite={false}
+            id={1}
+            item1="Homeworld: Earth"
+            item2="Population: 7000000000"
+            item3="Species: pupper"
+            title="Daniela"
+            toggleFavorite={[Function]}
+/>,
+          <Card
+            favorite={false}
+            id={1}
+            item1="Homeworld: Earth"
+            item2="Population: 7000000000"
+            item3="Species: pupper"
+            title="Daniela"
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "card-container People",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "favorite": false,
+            "id": 1,
+            "item1": "Homeworld: Earth",
+            "item2": "Population: 7000000000",
+            "item3": "Species: pupper",
+            "title": "Daniela",
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "favorite": false,
+            "id": 1,
+            "item1": "Homeworld: Earth",
+            "item2": "Population: 7000000000",
+            "item3": "Species: pupper",
+            "title": "Daniela",
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`People matches the snapshot with one card 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <People
+    cardData={
+        Array [
+            Object {
+              "favorite": false,
+              "homeworld": "Earth",
+              "homeworldPop": 7000000000,
+              "id": 1,
+              "name": "Daniela",
+              "species": Array [
+                "pupper",
+              ],
+            },
+          ]
+    }
+    toggleFavorite={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <Card
+          favorite={false}
+          id={1}
+          item1="Homeworld: Earth"
+          item2="Population: 7000000000"
+          item3="Species: pupper"
+          title="Daniela"
+          toggleFavorite={[Function]}
+/>,
+      ],
+      "className": "card-container People",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "favorite": false,
+          "id": 1,
+          "item1": "Homeworld: Earth",
+          "item2": "Population: 7000000000",
+          "item3": "Species: pupper",
+          "title": "Daniela",
+          "toggleFavorite": [Function],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <Card
+            favorite={false}
+            id={1}
+            item1="Homeworld: Earth"
+            item2="Population: 7000000000"
+            item3="Species: pupper"
+            title="Daniela"
+            toggleFavorite={[Function]}
+/>,
+        ],
+        "className": "card-container People",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "favorite": false,
+            "id": 1,
+            "item1": "Homeworld: Earth",
+            "item2": "Population: 7000000000",
+            "item3": "Species: pupper",
+            "title": "Daniela",
+            "toggleFavorite": [Function],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

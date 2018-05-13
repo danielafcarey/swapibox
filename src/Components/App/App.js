@@ -22,11 +22,11 @@ class App extends Component {
     }
   }
 
-  // componentDidMount = async () => {
-  //   const crawlData = await apiHelper.getCrawlData();
+  componentDidMount = async () => {
+    const crawlData = await apiHelper.getCrawlData();
 
-  //   this.setState({ crawlData })
-  // }
+    this.setState({ crawlData })
+  }
 
   changeCategory = async (event) => {
     const buttonName = event.target.name;
@@ -120,7 +120,7 @@ class App extends Component {
   }
 
   getDisplayElements = () => {
-    if (Object.keys(this.state.selectedData).length === 0) {
+    if (this.state.selectedData.length === 0) {
       return <Landing crawlData={ this.state.crawlData }/> 
     } else {
       return this.getCardsDisplay();        

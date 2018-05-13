@@ -1,6 +1,6 @@
 export default class ApiHelper {
   constructor() {
-    this.filmUrl = 'http://swapi.co/api/films/';
+    this.filmUrl = 'https://swapi.co/api/films/';
     this.peopleUrl = 'https://swapi.co/api/people/';
     this.planetsUrl = 'https://swapi.co/api/planets/';
     this.vehiclesUrl = 'https://swapi.co/api/vehicles/';
@@ -11,7 +11,6 @@ export default class ApiHelper {
   getCrawlData = async () => {
     try {
       const response = await fetch(this.filmUrl);
-
       if (response.status === 200) {
         const data = await response.json();
         return await this.createCrawlData(data.results);

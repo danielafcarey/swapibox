@@ -4,7 +4,6 @@ import { mockPeopleData } from './mockdata/swapi-people.js';
 import { mockSpeciesData } from './mockdata/swapi-species.js';
 import { mockVehiclesData } from './mockdata/swapi-vehicles.js';
 import { mockPlanetsData } from './mockdata/swapi-planets.js';
-import { peopleReturn, planetsReturn, vehicleReturn } from './mockdata/swapi-return-data.js';
 
 describe('ApiHelper', () => {
   let apiHelper;
@@ -20,7 +19,7 @@ describe('ApiHelper', () => {
     })
 
     it('calls fetch with the correct arguments', async () => {
-      const filmsUrl = 'http://swapi.co/api/films/';
+      const filmsUrl = 'https://swapi.co/api/films/';
       await apiHelper.getCrawlData();
 
       expect(window.fetch).toHaveBeenCalledWith(filmsUrl);
@@ -439,7 +438,8 @@ describe('ApiHelper', () => {
         model: 'Digger Crawler',
         vehicleClass: 'wheeled',
         numberOfPassengers: '30',
-        favorite: false
+        favorite: false,
+        id: 'https://swapi.co/api/vehicles/4/'
       }
 
       expect(results[0]).toEqual(expected);
@@ -474,7 +474,9 @@ describe('ApiHelper', () => {
         model: 'Digger Crawler',
         vehicleClass: 'wheeled',
         numberOfPassengers: '30',
-        favorite: false
+        favorite: false,
+        id: 'https://swapi.co/api/vehicles/4/'
+
       }
 
       expect(results[0]).toEqual(expected);
