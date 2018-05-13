@@ -27,7 +27,20 @@ class App extends Component {
   componentDidMount = async () => {
     const crawlData = await apiHelper.getCrawlData();
 
+    this.getFavoritesFromStorage();
     this.setState({ crawlData });
+  }
+
+  getFavoritesFromStorage = () => {
+    const favoritesFromStorage = JSON.parse(localStorage.getItem('SWAPI'));
+    if (favoritesFromStorage) {
+      this.setState({ favorites: favoritesFromStorage }); 
+    }
+  }
+
+  setFavoritesInStorage = () => {
+    const stringifiedFavorites = JSON.stringify(this.state.favorites);
+    localStorage.setItem('SWAPI', stringifiedFavorites);
   }
 
   changeCategory = async (event) => {
@@ -97,7 +110,10 @@ class App extends Component {
     }
 
     if (selectedCard.favorite) {
-      this.setState({ favorites: [...this.state.favorites, selectedCard] });
+      this.setState(
+        { favorites: [...this.state.favorites, selectedCard] }, 
+        this.setFavoritesInStorage 
+      );
     } else {
       this.removeFromFavorites(cardId);
     }
@@ -120,35 +136,41 @@ class App extends Component {
       return favorite.id !== cardId;
     });
 
-    this.setState({ favorites: newFavorites });
+    this.setState({ favorites: newFavorites }, this.setFavoritesInStorage);
   }
 
   getDisplayElements = () => {
-    const { selectedData, crawlData } = this.state;
-    if (selectedData.length === 0) {
+    const { selectedData, crawlData, selectedButton, favorites } = this.state;
+    if ((selectedData.length === 0 && !selectedButton) || !selectedData ) {
       return <Landing crawlData={ crawlData } /> ;
-    } else {
+    } else if (selectedData.length || favorites.length) {
       return this.getCardsDisplay();        
     }
   }
 
   getCardsDisplay = () => {
     const { selectedButton, selectedData, favorites } = this.state;
-    if (selectedButton === 'People' && selectedData[0].homeworld) {
+    if (selectedButton === 'People' &&
+      selectedData.length &&
+      selectedData[0].hasOwnProperty('homeworld')) {
       return (
         <People 
           cardData={ selectedData } 
           toggleFavorite={ this.toggleFavorite }  
         />
       );    
-    } else if (selectedButton === 'Planets' && selectedData[0].climate) {
+    } else if (selectedButton === 'Planets' && 
+      selectedData.length &&
+      selectedData[0].hasOwnProperty('climate')) {
       return (
         <Planets 
           cardData={ selectedData }
           toggleFavorite={ this.toggleFavorite } 
         />
       );
-    } else if (selectedButton === 'Vehicles' && selectedData[0].model) {
+    } else if (selectedButton === 'Vehicles' && 
+      selectedData.length &&
+      selectedData[0].hasOwnProperty('model')) {
       return (
         <Vehicles 
           cardData={ selectedData } 

@@ -39,10 +39,4 @@
   "globals": {
     "expect": true
   },
-  "overrides": [
-    { 
-      "files": [ "src/Components/*.js" ],
-      "excludedFiles": "*.test.js" 
-    }
-  ]
 }
