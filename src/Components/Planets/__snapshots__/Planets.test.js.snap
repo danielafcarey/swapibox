@@ -10,7 +10,7 @@ ShallowWrapper {
             Object {
               "climate": "hot",
               "favorite": false,
-              "id": 1,
+              "id": "id",
               "name": "Daniela",
               "population": 7000000000,
               "residents": Array [
@@ -21,7 +21,7 @@ ShallowWrapper {
             Object {
               "climate": "hot",
               "favorite": false,
-              "id": 1,
+              "id": "id",
               "name": "Daniela",
               "population": 7000000000,
               "residents": Array [
@@ -48,7 +48,7 @@ ShallowWrapper {
       "children": Array [
         <Card
           favorite={false}
-          id={1}
+          id="id"
           item1="Population: 7000000000"
           item2="Climate: hot"
           item3="Terrain: rocks"
@@ -58,7 +58,7 @@ ShallowWrapper {
 />,
         <Card
           favorite={false}
-          id={1}
+          id="id"
           item1="Population: 7000000000"
           item2="Climate: hot"
           item3="Terrain: rocks"
@@ -73,11 +73,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1",
+        "key": "id",
         "nodeType": "function",
         "props": Object {
           "favorite": false,
-          "id": 1,
+          "id": "id",
           "item1": "Population: 7000000000",
           "item2": "Climate: hot",
           "item3": "Terrain: rocks",
@@ -91,11 +91,11 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1",
+        "key": "id",
         "nodeType": "function",
         "props": Object {
           "favorite": false,
-          "id": 1,
+          "id": "id",
           "item1": "Population: 7000000000",
           "item2": "Climate: hot",
           "item3": "Terrain: rocks",
@@ -119,7 +119,7 @@ ShallowWrapper {
         "children": Array [
           <Card
             favorite={false}
-            id={1}
+            id="id"
             item1="Population: 7000000000"
             item2="Climate: hot"
             item3="Terrain: rocks"
@@ -129,7 +129,7 @@ ShallowWrapper {
 />,
           <Card
             favorite={false}
-            id={1}
+            id="id"
             item1="Population: 7000000000"
             item2="Climate: hot"
             item3="Terrain: rocks"
@@ -144,11 +144,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1",
+          "key": "id",
           "nodeType": "function",
           "props": Object {
             "favorite": false,
-            "id": 1,
+            "id": "id",
             "item1": "Population: 7000000000",
             "item2": "Climate: hot",
             "item3": "Terrain: rocks",
@@ -162,11 +162,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1",
+          "key": "id",
           "nodeType": "function",
           "props": Object {
             "favorite": false,
-            "id": 1,
+            "id": "id",
             "item1": "Population: 7000000000",
             "item2": "Climate: hot",
             "item3": "Terrain: rocks",
@@ -202,7 +202,7 @@ ShallowWrapper {
             Object {
               "climate": "hot",
               "favorite": false,
-              "id": 1,
+              "id": "id",
               "name": "Daniela",
               "population": 7000000000,
               "residents": Array [
@@ -229,7 +229,7 @@ ShallowWrapper {
       "children": Array [
         <Card
           favorite={false}
-          id={1}
+          id="id"
           item1="Population: 7000000000"
           item2="Climate: hot"
           item3="Terrain: rocks"
@@ -244,11 +244,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1",
+        "key": "id",
         "nodeType": "function",
         "props": Object {
           "favorite": false,
-          "id": 1,
+          "id": "id",
           "item1": "Population: 7000000000",
           "item2": "Climate: hot",
           "item3": "Terrain: rocks",
@@ -272,7 +272,7 @@ ShallowWrapper {
         "children": Array [
           <Card
             favorite={false}
-            id={1}
+            id="id"
             item1="Population: 7000000000"
             item2="Climate: hot"
             item3="Terrain: rocks"
@@ -287,11 +287,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1",
+          "key": "id",
           "nodeType": "function",
           "props": Object {
             "favorite": false,
-            "id": 1,
+            "id": "id",
             "item1": "Population: 7000000000",
             "item2": "Climate: hot",
             "item3": "Terrain: rocks",

@@ -6,7 +6,7 @@ describe('Vehicles', () => {
 
   it('matches the snapshot with one card', () => {
     const mockCardData = [{
-      id: 1,
+      id: 'id',
       favorite: false,
       name: 'Daniela',
       vehicleClass: 'car',
@@ -25,7 +25,7 @@ describe('Vehicles', () => {
 
   it('matches the snapshot with cards', () => {
     const mockCardData = [{
-      id: 1,
+      id: 'id',
       favorite: false,
       name: 'Daniela',
       vehicleClass: 'car',
@@ -33,7 +33,7 @@ describe('Vehicles', () => {
       numberOfPassengers: 1
     },
       {
-        id: 1,
+        id: 'id',
         favorite: false,
         name: 'Daniela',
         vehicleClass: 'car',

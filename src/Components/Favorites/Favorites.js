@@ -68,7 +68,8 @@ const Favorites = ({ cardData, toggleFavorite }) => {
 }
 
 Favorites.propTypes = {
-  cardData: PropTypes.arrayOf(PropTypes.object).isRequired
+  cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
+  toggleFavorite: PropTypes.func.isRequired
 }
 
 export default Favorites;

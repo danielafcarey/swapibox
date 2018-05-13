@@ -9,7 +9,7 @@ ShallowWrapper {
         Array [
             Object {
               "favorite": false,
-              "id": 1,
+              "id": "id",
               "model": "cool",
               "name": "Daniela",
               "numberOfPassengers": 1,
@@ -17,7 +17,7 @@ ShallowWrapper {
             },
             Object {
               "favorite": false,
-              "id": 1,
+              "id": "id",
               "model": "cool",
               "name": "Daniela",
               "numberOfPassengers": 1,
@@ -42,7 +42,7 @@ ShallowWrapper {
       "children": Array [
         <Card
           favorite={false}
-          id={1}
+          id="id"
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
@@ -51,7 +51,7 @@ ShallowWrapper {
 />,
         <Card
           favorite={false}
-          id={1}
+          id="id"
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
@@ -65,11 +65,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1",
+        "key": "id",
         "nodeType": "function",
         "props": Object {
           "favorite": false,
-          "id": 1,
+          "id": "id",
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
@@ -82,11 +82,11 @@ ShallowWrapper {
       },
       Object {
         "instance": null,
-        "key": "1",
+        "key": "id",
         "nodeType": "function",
         "props": Object {
           "favorite": false,
-          "id": 1,
+          "id": "id",
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
@@ -109,7 +109,7 @@ ShallowWrapper {
         "children": Array [
           <Card
             favorite={false}
-            id={1}
+            id="id"
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
@@ -118,7 +118,7 @@ ShallowWrapper {
 />,
           <Card
             favorite={false}
-            id={1}
+            id="id"
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
@@ -132,11 +132,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1",
+          "key": "id",
           "nodeType": "function",
           "props": Object {
             "favorite": false,
-            "id": 1,
+            "id": "id",
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
@@ -149,11 +149,11 @@ ShallowWrapper {
         },
         Object {
           "instance": null,
-          "key": "1",
+          "key": "id",
           "nodeType": "function",
           "props": Object {
             "favorite": false,
-            "id": 1,
+            "id": "id",
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
@@ -187,7 +187,7 @@ ShallowWrapper {
         Array [
             Object {
               "favorite": false,
-              "id": 1,
+              "id": "id",
               "model": "cool",
               "name": "Daniela",
               "numberOfPassengers": 1,
@@ -212,7 +212,7 @@ ShallowWrapper {
       "children": Array [
         <Card
           favorite={false}
-          id={1}
+          id="id"
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
@@ -226,11 +226,11 @@ ShallowWrapper {
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "1",
+        "key": "id",
         "nodeType": "function",
         "props": Object {
           "favorite": false,
-          "id": 1,
+          "id": "id",
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
@@ -253,7 +253,7 @@ ShallowWrapper {
         "children": Array [
           <Card
             favorite={false}
-            id={1}
+            id="id"
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
@@ -267,11 +267,11 @@ ShallowWrapper {
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "1",
+          "key": "id",
           "nodeType": "function",
           "props": Object {
             "favorite": false,
-            "id": 1,
+            "id": "id",
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",

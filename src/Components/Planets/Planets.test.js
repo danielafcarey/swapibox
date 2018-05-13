@@ -6,7 +6,7 @@ describe('Planets', () => {
 
   it('matches the snapshot with one card', () => {
     const mockCardData = [{
-      id: 1,
+      id: 'id',
       favorite: false,
       name: 'Daniela',
       climate: 'hot',
@@ -26,7 +26,7 @@ describe('Planets', () => {
 
   it('matches the snapshot with cards', () => {
     const mockCardData = [{
-      id: 1,
+      id: 'id',
       favorite: false,
       name: 'Daniela',
       climate: 'hot',
@@ -35,7 +35,7 @@ describe('Planets', () => {
       terrain: 'rocks'
     },
       {
-        id: 1,
+        id: 'id',
         favorite: false,
         name: 'Daniela',
         climate: 'hot',

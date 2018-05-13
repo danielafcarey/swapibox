@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Navigation = ({ selectedButton, changeCategory }) => {
   let showSelectMessage;
@@ -29,6 +30,11 @@ const Navigation = ({ selectedButton, changeCategory }) => {
       <h3 className={ showSelectMessage }>Select a category</h3>
     </div>
   );
+}
+
+Navigation.propTypes = {
+  selectedButton: PropTypes.string.isRequired,
+  changeCategory: PropTypes.func.isRequired
 }
 
 export default Navigation;

@@ -34,11 +34,6 @@ describe('ApiHelper', () => {
       expect(apiHelper.createCrawlData).toHaveBeenCalledWith(expectedArgs);
     })
 
-    it('returns an object with crawlText, title, and releaseDate', async () => {
-      // how do I mock this connection since createCrawlData is getting a random film based on a randomly generated number and I can't control the arguments passed into createCrawlData from getCrawlData?
-
-    })
-
     it('throws an error if status is not ok', () => {
       window.fetch = jest.fn().mockImplementation(() => Promise.resolve({
         status: 500

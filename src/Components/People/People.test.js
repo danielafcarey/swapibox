@@ -6,7 +6,7 @@ describe('People', () => {
 
   it('matches the snapshot with one card', () => {
     const mockCardData = [{
-      id: 1,
+      id: 'id',
       favorite: false,
       name: 'Daniela',
       homeworld: 'Earth',
@@ -25,7 +25,7 @@ describe('People', () => {
 
   it('matches the snapshot with cards', () => {
     const mockCardData = [{
-      id: 1,
+      id: 'id',
       favorite: false,
       name: 'Daniela',
       homeworld: 'Earth',
@@ -33,7 +33,7 @@ describe('People', () => {
       species: ['pupper']
     },
       {
-        id: 1,
+        id: 'id',
         favorite: false,
         name: 'Daniela',
         homeworld: 'Earth',
