@@ -5,7 +5,14 @@ import Card from '../Card/Card.js';
 
 const Vehicles = ({ cardData, toggleFavorite }) => {
   const vehiclesCards = cardData.map(card => {
-    const { id, favorite, name, vehicleClass, model, numberOfPassengers } = card;
+    const { 
+      id, 
+      favorite, 
+      name, 
+      vehicleClass, 
+      model, 
+      numberOfPassengers 
+    } = card;
 
     return (
       <Card
@@ -19,19 +26,19 @@ const Vehicles = ({ cardData, toggleFavorite }) => {
         toggleFavorite={ toggleFavorite }
         key={ id }
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="card-container Vehicles">
       { vehiclesCards }
     </div>
   );
-}
+};
 
 Vehicles.propTypes = {
   cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
   toggleFavorite: PropTypes.func.isRequired
-}
+};
 
 export default Vehicles;

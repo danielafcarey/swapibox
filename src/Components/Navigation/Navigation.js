@@ -15,22 +15,22 @@ const Navigation = (props) => {
 
   let peopleClass;
   if (selectedButton === 'People') {
-    peopleClass = 'selected'
+    peopleClass = 'selected';
   }
 
   let planetsClass;
   if (selectedButton === 'Planets') {
-    planetsClass = 'selected'
+    planetsClass = 'selected';
   }
 
   let vehiclesClass;
   if (selectedButton === 'Vehicles') {
-    vehiclesClass = 'selected'
+    vehiclesClass = 'selected';
   }
 
   let favoritesClass;
   if (selectedButton === 'Favorites') {
-    favoritesClass = 'selected'
+    favoritesClass = 'selected';
   }
 
   return (
@@ -62,7 +62,7 @@ const Navigation = (props) => {
       <h3 className={ showSelectMessage }>Select a category</h3>
     </div>
   );
-}
+};
 
 Navigation.propTypes = {
   selectedButton: PropTypes.string.isRequired,

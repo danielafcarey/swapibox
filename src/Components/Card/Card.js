@@ -16,9 +16,9 @@ const Card = (props) => {
 
   let imgSrc;
   if (favorite) {
-    imgSrc = require('../../images/lightsaber-red.png')
+    imgSrc = require('../../images/lightsaber-red.png');
   } else {
-    imgSrc = require('../../images/lightsaber-white.png')
+    imgSrc = require('../../images/lightsaber-white.png');
   }
 
   return (
@@ -39,9 +39,8 @@ const Card = (props) => {
         <h4 className="item4">{ item4 }</h4>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 Card.propTypes = {
   id: PropTypes.string.isRequired,
@@ -53,6 +52,6 @@ Card.propTypes = {
   favorite: PropTypes.bool.isRequired,
   section: PropTypes.string.isRequired,
   toggleFavorite: PropTypes.func.isRequired
-}
+};
 
 export default Card;

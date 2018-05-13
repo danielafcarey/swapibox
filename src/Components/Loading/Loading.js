@@ -8,7 +8,7 @@ const Loading = () => {
         alt="Loading. Please wait."
       />
     </div>
-  )
-}
+  );
+};
 
 export default Loading;
