@@ -7,6 +7,7 @@ import People from '../People/People.js';
 import Planets from '../Planets/Planets.js';
 import Vehicles from '../Vehicles/Vehicles.js';
 import Favorites from '../Favorites/Favorites.js';
+import Loading from '../Loading/Loading.js';
 
 import ApiHelper from '../../Api.js';
 const apiHelper = new ApiHelper();
@@ -18,7 +19,8 @@ class App extends Component {
       selectedButton: '',
       selectedData: [],
       crawlData: {},
-      favorites:  []
+      favorites:  [],
+      loading: false
     }
   }
 
@@ -30,6 +32,7 @@ class App extends Component {
 
   changeCategory = async (event) => {
     const buttonName = event.target.name;
+    this.setState({ loading: true });
 
     if (buttonName === 'People') {
       await this.getPeopleData();
@@ -38,6 +41,7 @@ class App extends Component {
     } else if (buttonName === 'Vehicles') {
       await this.getVehiclesData();
     } else if (buttonName === 'Favorites') {
+      this.setState({ loading: false })
       await this.getCardsDisplay();
     }
 
@@ -49,7 +53,7 @@ class App extends Component {
   }
 
   changeDataState = (selectedData) => {
-    this.setState({ selectedData });
+    this.setState({ selectedData, loading: false });
   }
 
   getPeopleData = async () => {
@@ -113,15 +117,16 @@ class App extends Component {
 
   removeFromFavorites = (cardId) => {
     const newFavorites = this.state.favorites.filter(favorite => {
-      return favorite.id !== cardId
-    })
+      return favorite.id !== cardId;
+    });
 
-    this.setState({ favorites: newFavorites })
+    this.setState({ favorites: newFavorites });
   }
 
   getDisplayElements = () => {
-    if (this.state.selectedData.length === 0) {
-      return <Landing crawlData={ this.state.crawlData }/> 
+    const { selectedData, crawlData } = this.state;
+    if (selectedData.length === 0) {
+      return <Landing crawlData={ crawlData } /> ;
     } else {
       return this.getCardsDisplay();        
     }
@@ -161,15 +166,18 @@ class App extends Component {
   }
 
   render() {
+    const { selectedButton, loading, favorites } = this.state;
     return (
       <div className="App">
         <header className="App-header">
           <h1 className="App-title">swapi box</h1>
           <Navigation 
             changeCategory={ this.changeCategory }
-            selectedButton={ this.state.selectedButton }/>
+            selectedButton={ selectedButton }
+            favoritesLength={ favorites.length }
+          />
         </header>
-        { this.getDisplayElements() } 
+        { loading ? <Loading /> : this.getDisplayElements() } 
       </div>
     );
   }
