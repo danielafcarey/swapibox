@@ -29,6 +29,10 @@
       cursor: pointer;
     }
 
+    &:focus {
+      outline: none;
+    }
+
   }
 
   .info-list {
