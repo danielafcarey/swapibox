@@ -1,4 +1,17 @@
 .loading {
   text-align: center;
   margin-top: 150px;
+
+  img {
+    -webkit-animation: rotation 2s infinite linear;
+  }
+
+  @-webkit-keyframes rotation {
+    from {
+      -webkit-transform: rotateY(0deg);
+    }
+    to {
+      -webkit-transform: rotateY(-180deg);
+    }
+  }
 }
