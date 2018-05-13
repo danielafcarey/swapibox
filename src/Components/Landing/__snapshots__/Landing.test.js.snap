@@ -1,0 +1,247 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Landing matches the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Landing
+    crawlData={
+        Object {
+            "crawlText": "i am a movie",
+            "releaseDate": "today",
+            "title": "moviem",
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="crawl"
+>
+        <p>
+                i am a movie
+        </p>
+        <div
+                className="title"
+        >
+                <h1>
+                        moviem
+                </h1>
+                <p>
+                        today
+                </p>
+        </div>
+</div>,
+      "className": "Landing",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <p>
+            i am a movie
+</p>,
+          <div
+            className="title"
+>
+            <h1>
+                        moviem
+            </h1>
+            <p>
+                        today
+            </p>
+</div>,
+        ],
+        "className": "crawl",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "i am a movie",
+          },
+          "ref": null,
+          "rendered": "i am a movie",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h1>
+                moviem
+</h1>,
+              <p>
+                today
+</p>,
+            ],
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "moviem",
+              },
+              "ref": null,
+              "rendered": "moviem",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "today",
+              },
+              "ref": null,
+              "rendered": "today",
+              "type": "p",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="crawl"
+>
+          <p>
+                    i am a movie
+          </p>
+          <div
+                    className="title"
+          >
+                    <h1>
+                              moviem
+                    </h1>
+                    <p>
+                              today
+                    </p>
+          </div>
+</div>,
+        "className": "Landing",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <p>
+              i am a movie
+</p>,
+            <div
+              className="title"
+>
+              <h1>
+                            moviem
+              </h1>
+              <p>
+                            today
+              </p>
+</div>,
+          ],
+          "className": "crawl",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "i am a movie",
+            },
+            "ref": null,
+            "rendered": "i am a movie",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <h1>
+                  moviem
+</h1>,
+                <p>
+                  today
+</p>,
+              ],
+              "className": "title",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "moviem",
+                },
+                "ref": null,
+                "rendered": "moviem",
+                "type": "h1",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "today",
+                },
+                "ref": null,
+                "rendered": "today",
+                "type": "p",
+              },
+            ],
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

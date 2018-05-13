@@ -1,0 +1,751 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    favorite={false}
+    id="id"
+    item1="item1"
+    item2="item2"
+    item3="item3"
+    item4="item4"
+    title="is a card"
+    toggleFavorite={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="title"
+>
+          is a card
+</h3>,
+        <button
+          onClick={[Function]}
+>
+          <img
+                    alt="Add to favorites"
+                    src="lightsaber-white.png"
+          />
+</button>,
+        <div
+          className="info-list"
+>
+          <h4
+                    className="info"
+          >
+                    item1
+          </h4>
+          <h4
+                    className="info"
+          >
+                    item2
+          </h4>
+          <h4
+                    className="item3"
+          >
+                    item3
+          </h4>
+          <h4
+                    className="item4"
+          >
+                    item4
+          </h4>
+</div>,
+      ],
+      "className": "Card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "is a card",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "is a card",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Add to favorites"
+            src="lightsaber-white.png"
+/>,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Add to favorites",
+            "src": "lightsaber-white.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="info"
+>
+              item1
+</h4>,
+            <h4
+              className="info"
+>
+              item2
+</h4>,
+            <h4
+              className="item3"
+>
+              item3
+</h4>,
+            <h4
+              className="item4"
+>
+              item4
+</h4>,
+          ],
+          "className": "info-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item1",
+              "className": "info",
+            },
+            "ref": null,
+            "rendered": "item1",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item2",
+              "className": "info",
+            },
+            "ref": null,
+            "rendered": "item2",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item3",
+              "className": "item3",
+            },
+            "ref": null,
+            "rendered": "item3",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item4",
+              "className": "item4",
+            },
+            "ref": null,
+            "rendered": "item4",
+            "type": "h4",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="title"
+>
+            is a card
+</h3>,
+          <button
+            onClick={[Function]}
+>
+            <img
+                        alt="Add to favorites"
+                        src="lightsaber-white.png"
+            />
+</button>,
+          <div
+            className="info-list"
+>
+            <h4
+                        className="info"
+            >
+                        item1
+            </h4>
+            <h4
+                        className="info"
+            >
+                        item2
+            </h4>
+            <h4
+                        className="item3"
+            >
+                        item3
+            </h4>
+            <h4
+                        className="item4"
+            >
+                        item4
+            </h4>
+</div>,
+        ],
+        "className": "Card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "is a card",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "is a card",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Add to favorites"
+              src="lightsaber-white.png"
+/>,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Add to favorites",
+              "src": "lightsaber-white.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="info"
+>
+                item1
+</h4>,
+              <h4
+                className="info"
+>
+                item2
+</h4>,
+              <h4
+                className="item3"
+>
+                item3
+</h4>,
+              <h4
+                className="item4"
+>
+                item4
+</h4>,
+            ],
+            "className": "info-list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item1",
+                "className": "info",
+              },
+              "ref": null,
+              "rendered": "item1",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item2",
+                "className": "info",
+              },
+              "ref": null,
+              "rendered": "item2",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item3",
+                "className": "item3",
+              },
+              "ref": null,
+              "rendered": "item3",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item4",
+                "className": "item4",
+              },
+              "ref": null,
+              "rendered": "item4",
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
+
+exports[`Card should match the snapshot if a card is a favorite 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Card
+    favorite={true}
+    id="id"
+    item1="item1"
+    item2="item2"
+    item3="item3"
+    item4="item4"
+    title="is a card"
+    toggleFavorite={[Function]}
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="title"
+>
+          is a card
+</h3>,
+        <button
+          onClick={[Function]}
+>
+          <img
+                    alt="Add to favorites"
+                    src="lightsaber-red.png"
+          />
+</button>,
+        <div
+          className="info-list"
+>
+          <h4
+                    className="info"
+          >
+                    item1
+          </h4>
+          <h4
+                    className="info"
+          >
+                    item2
+          </h4>
+          <h4
+                    className="item3"
+          >
+                    item3
+          </h4>
+          <h4
+                    className="item4"
+          >
+                    item4
+          </h4>
+</div>,
+      ],
+      "className": "Card",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "is a card",
+          "className": "title",
+        },
+        "ref": null,
+        "rendered": "is a card",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <img
+            alt="Add to favorites"
+            src="lightsaber-red.png"
+/>,
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Add to favorites",
+            "src": "lightsaber-red.png",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        "type": "button",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4
+              className="info"
+>
+              item1
+</h4>,
+            <h4
+              className="info"
+>
+              item2
+</h4>,
+            <h4
+              className="item3"
+>
+              item3
+</h4>,
+            <h4
+              className="item4"
+>
+              item4
+</h4>,
+          ],
+          "className": "info-list",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item1",
+              "className": "info",
+            },
+            "ref": null,
+            "rendered": "item1",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item2",
+              "className": "info",
+            },
+            "ref": null,
+            "rendered": "item2",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item3",
+              "className": "item3",
+            },
+            "ref": null,
+            "rendered": "item3",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "item4",
+              "className": "item4",
+            },
+            "ref": null,
+            "rendered": "item4",
+            "type": "h4",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="title"
+>
+            is a card
+</h3>,
+          <button
+            onClick={[Function]}
+>
+            <img
+                        alt="Add to favorites"
+                        src="lightsaber-red.png"
+            />
+</button>,
+          <div
+            className="info-list"
+>
+            <h4
+                        className="info"
+            >
+                        item1
+            </h4>
+            <h4
+                        className="info"
+            >
+                        item2
+            </h4>
+            <h4
+                        className="item3"
+            >
+                        item3
+            </h4>
+            <h4
+                        className="item4"
+            >
+                        item4
+            </h4>
+</div>,
+        ],
+        "className": "Card",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "is a card",
+            "className": "title",
+          },
+          "ref": null,
+          "rendered": "is a card",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <img
+              alt="Add to favorites"
+              src="lightsaber-red.png"
+/>,
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "alt": "Add to favorites",
+              "src": "lightsaber-red.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          "type": "button",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4
+                className="info"
+>
+                item1
+</h4>,
+              <h4
+                className="info"
+>
+                item2
+</h4>,
+              <h4
+                className="item3"
+>
+                item3
+</h4>,
+              <h4
+                className="item4"
+>
+                item4
+</h4>,
+            ],
+            "className": "info-list",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item1",
+                "className": "info",
+              },
+              "ref": null,
+              "rendered": "item1",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item2",
+                "className": "info",
+              },
+              "ref": null,
+              "rendered": "item2",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item3",
+                "className": "item3",
+              },
+              "ref": null,
+              "rendered": "item3",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "item4",
+                "className": "item4",
+              },
+              "ref": null,
+              "rendered": "item4",
+              "type": "h4",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
