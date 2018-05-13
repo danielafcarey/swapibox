@@ -15,22 +15,23 @@ const People = ({ cardData, toggleFavorite }) => {
         item2={ `Population: ${homeworldPop}` }
         item3={ `Species: ${species.join(', ')}` }
         favorite={ favorite }
+        section='People'
         toggleFavorite={ toggleFavorite }
         key={ id }
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="card-container People">
       { peopleCards }
     </div>
   );
-}
+};
 
 People.propTypes = {
   cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
   toggleFavorite: PropTypes.func.isRequired
-}
+};
 
 export default People;

@@ -4,8 +4,8 @@ export default class ApiHelper {
     this.peopleUrl = 'https://swapi.co/api/people/';
     this.planetsUrl = 'https://swapi.co/api/planets/';
     this.vehiclesUrl = 'https://swapi.co/api/vehicles/';
-    this.speciesUrl = 'https://swapi.co/api/species/'
-    this.starshipsUrl = 'https://swapi.co/api/starships/'
+    this.speciesUrl = 'https://swapi.co/api/species/';
+    this.starshipsUrl = 'https://swapi.co/api/starships/';
   }
 
   getCrawlData = async () => {
@@ -18,7 +18,7 @@ export default class ApiHelper {
         throw Error(`Status failure: ${response.status}`);
       }
 
-    } catch(error) {
+    } catch (error) {
       throw Error(`getCrawlData: ${error}`);
     }
 
@@ -47,7 +47,7 @@ export default class ApiHelper {
         throw Error(`Status failure: ${response.status}`);
       }
 
-    } catch(error) {
+    } catch (error) {
       throw Error(`getPeopleData: ${error}`);
     }
   }
@@ -82,8 +82,8 @@ export default class ApiHelper {
           throw Error(`Status failure: ${response.status}`);
         }
 
-      } catch(error) {
-        throw Error(`getSpeciesData: ${error}`)
+      } catch (error) {
+        throw Error(`getSpeciesData: ${error}`);
       }
     });
 
@@ -103,7 +103,7 @@ export default class ApiHelper {
         throw Error(`Status failure: ${response.status}`);
       }
 
-    } catch(error) {
+    } catch (error) {
       throw Error(`getPersonPlanetData: ${error}`);
     }
   }
@@ -119,7 +119,7 @@ export default class ApiHelper {
         throw Error(`Status failure: ${response.status}`);
       }
 
-    } catch(error) {
+    } catch (error) {
       throw Error(`getPlanetsData: ${error}`);
     }
   }
@@ -155,11 +155,11 @@ export default class ApiHelper {
           const data = await response.json();
           return data.name;
         } else {
-          throw Error(`Status failure: ${response.status}`)
+          throw Error(`Status failure: ${response.status}`);
         }
 
-      } catch(error) {
-        throw Error(`getPlanetsData: ${error}`)
+      } catch (error) {
+        throw Error(`getPlanetsData: ${error}`);
       }
     });
 
@@ -177,7 +177,7 @@ export default class ApiHelper {
         throw Error(`Status failure: ${response.status}`);
       }
 
-    } catch(error) {
+    } catch (error) {
       throw Error(`getVehiclesData: ${error}`);
     }
   }
@@ -196,7 +196,7 @@ export default class ApiHelper {
         numberOfPassengers, 
         favorite: false,
         id: vehicle.url 
-      }
+      };
     });
 
     return (vehiclesPromises);

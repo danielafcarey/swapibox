@@ -6,7 +6,7 @@ ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <Navigation
     changeCategory={[Function]}
-    selectedButton="people"
+    selectedButton=""
 />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -22,35 +22,36 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <button
-          className="people-button"
+          className={undefined}
           name="People"
           onClick={[Function]}
 >
           People
 </button>,
         <button
-          className="planets-button"
+          className={undefined}
           name="Planets"
           onClick={[Function]}
 >
           Planets
 </button>,
         <button
-          className="vehicles-button"
+          className={undefined}
           name="Vehicles"
           onClick={[Function]}
 >
           Vehicles
 </button>,
         <button
-          className="favorites-button"
+          className={undefined}
           name="Favorites"
           onClick={[Function]}
 >
-          Favorites
+          Favorites (
+          )
 </button>,
         <h3
-          className="hide"
+          className="showSelectMessage"
 >
           Select a category
 </h3>,
@@ -65,7 +66,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "People",
-          "className": "people-button",
+          "className": undefined,
           "name": "People",
           "onClick": [Function],
         },
@@ -79,7 +80,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Planets",
-          "className": "planets-button",
+          "className": undefined,
           "name": "Planets",
           "onClick": [Function],
         },
@@ -93,7 +94,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Vehicles",
-          "className": "vehicles-button",
+          "className": undefined,
           "name": "Vehicles",
           "onClick": [Function],
         },
@@ -106,13 +107,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Favorites",
-          "className": "favorites-button",
+          "children": Array [
+            "Favorites (",
+            undefined,
+            ")",
+          ],
+          "className": undefined,
           "name": "Favorites",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "Favorites",
+        "rendered": Array [
+          "Favorites (",
+          undefined,
+          ")",
+        ],
         "type": "button",
       },
       Object {
@@ -121,7 +130,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Select a category",
-          "className": "hide",
+          "className": "showSelectMessage",
         },
         "ref": null,
         "rendered": "Select a category",
@@ -138,35 +147,36 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <button
-            className="people-button"
+            className={undefined}
             name="People"
             onClick={[Function]}
 >
             People
 </button>,
           <button
-            className="planets-button"
+            className={undefined}
             name="Planets"
             onClick={[Function]}
 >
             Planets
 </button>,
           <button
-            className="vehicles-button"
+            className={undefined}
             name="Vehicles"
             onClick={[Function]}
 >
             Vehicles
 </button>,
           <button
-            className="favorites-button"
+            className={undefined}
             name="Favorites"
             onClick={[Function]}
 >
-            Favorites
+            Favorites (
+            )
 </button>,
           <h3
-            className="hide"
+            className="showSelectMessage"
 >
             Select a category
 </h3>,
@@ -181,7 +191,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "People",
-            "className": "people-button",
+            "className": undefined,
             "name": "People",
             "onClick": [Function],
           },
@@ -195,7 +205,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Planets",
-            "className": "planets-button",
+            "className": undefined,
             "name": "Planets",
             "onClick": [Function],
           },
@@ -209,7 +219,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Vehicles",
-            "className": "vehicles-button",
+            "className": undefined,
             "name": "Vehicles",
             "onClick": [Function],
           },
@@ -222,13 +232,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Favorites",
-            "className": "favorites-button",
+            "children": Array [
+              "Favorites (",
+              undefined,
+              ")",
+            ],
+            "className": undefined,
             "name": "Favorites",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Favorites",
+          "rendered": Array [
+            "Favorites (",
+            undefined,
+            ")",
+          ],
           "type": "button",
         },
         Object {
@@ -237,7 +255,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Select a category",
-            "className": "hide",
+            "className": "showSelectMessage",
           },
           "ref": null,
           "rendered": "Select a category",
@@ -279,32 +297,33 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <button
-          className="people-button"
+          className={undefined}
           name="People"
           onClick={[Function]}
 >
           People
 </button>,
         <button
-          className="planets-button"
+          className={undefined}
           name="Planets"
           onClick={[Function]}
 >
           Planets
 </button>,
         <button
-          className="vehicles-button"
+          className={undefined}
           name="Vehicles"
           onClick={[Function]}
 >
           Vehicles
 </button>,
         <button
-          className="favorites-button"
+          className={undefined}
           name="Favorites"
           onClick={[Function]}
 >
-          Favorites
+          Favorites (
+          )
 </button>,
         <h3
           className="showSelectMessage"
@@ -322,7 +341,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "People",
-          "className": "people-button",
+          "className": undefined,
           "name": "People",
           "onClick": [Function],
         },
@@ -336,7 +355,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Planets",
-          "className": "planets-button",
+          "className": undefined,
           "name": "Planets",
           "onClick": [Function],
         },
@@ -350,7 +369,7 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": "Vehicles",
-          "className": "vehicles-button",
+          "className": undefined,
           "name": "Vehicles",
           "onClick": [Function],
         },
@@ -363,13 +382,21 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "Favorites",
-          "className": "favorites-button",
+          "children": Array [
+            "Favorites (",
+            undefined,
+            ")",
+          ],
+          "className": undefined,
           "name": "Favorites",
           "onClick": [Function],
         },
         "ref": null,
-        "rendered": "Favorites",
+        "rendered": Array [
+          "Favorites (",
+          undefined,
+          ")",
+        ],
         "type": "button",
       },
       Object {
@@ -395,32 +422,33 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <button
-            className="people-button"
+            className={undefined}
             name="People"
             onClick={[Function]}
 >
             People
 </button>,
           <button
-            className="planets-button"
+            className={undefined}
             name="Planets"
             onClick={[Function]}
 >
             Planets
 </button>,
           <button
-            className="vehicles-button"
+            className={undefined}
             name="Vehicles"
             onClick={[Function]}
 >
             Vehicles
 </button>,
           <button
-            className="favorites-button"
+            className={undefined}
             name="Favorites"
             onClick={[Function]}
 >
-            Favorites
+            Favorites (
+            )
 </button>,
           <h3
             className="showSelectMessage"
@@ -438,7 +466,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "People",
-            "className": "people-button",
+            "className": undefined,
             "name": "People",
             "onClick": [Function],
           },
@@ -452,7 +480,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Planets",
-            "className": "planets-button",
+            "className": undefined,
             "name": "Planets",
             "onClick": [Function],
           },
@@ -466,7 +494,7 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": "Vehicles",
-            "className": "vehicles-button",
+            "className": undefined,
             "name": "Vehicles",
             "onClick": [Function],
           },
@@ -479,13 +507,21 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "Favorites",
-            "className": "favorites-button",
+            "children": Array [
+              "Favorites (",
+              undefined,
+              ")",
+            ],
+            "className": undefined,
             "name": "Favorites",
             "onClick": [Function],
           },
           "ref": null,
-          "rendered": "Favorites",
+          "rendered": Array [
+            "Favorites (",
+            undefined,
+            ")",
+          ],
           "type": "button",
         },
         Object {

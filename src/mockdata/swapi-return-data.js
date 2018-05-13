@@ -4,9 +4,13 @@ const planetsReturn = [{"name":"Alderaan","terrain":"grasslands, mountains","pop
 
 const vehiclesReturn = [{"name":"Sand Crawler","model":"Digger Crawler","vehicleClass":"wheeled","numberOfPassengers":"30","favorite":false},{"name":"T-16 skyhopper","model":"T-16 skyhopper","vehicleClass":"repulsorcraft","numberOfPassengers":"1","favorite":false},{"name":"X-34 landspeeder","model":"X-34 landspeeder","vehicleClass":"repulsorcraft","numberOfPassengers":"1","favorite":false},{"name":"TIE/LN starfighter","model":"Twin Ion Engine/Ln Starfighter","vehicleClass":"starfighter","numberOfPassengers":"0","favorite":false},{"name":"Snowspeeder","model":"t-47 airspeeder","vehicleClass":"airspeeder","numberOfPassengers":"0","favorite":false},{"name":"TIE bomber","model":"TIE/sa bomber","vehicleClass":"space/planetary bomber","numberOfPassengers":"0","favorite":false},{"name":"AT-AT","model":"All Terrain Armored Transport","vehicleClass":"assault walker","numberOfPassengers":"40","favorite":false},{"name":"AT-ST","model":"All Terrain Scout Transport","vehicleClass":"walker","numberOfPassengers":"0","favorite":false},{"name":"Storm IV Twin-Pod cloud car","model":"Storm IV Twin-Pod","vehicleClass":"repulsorcraft","numberOfPassengers":"0","favorite":false},{"name":"Sail barge","model":"Modified Luxury Sail Barge","vehicleClass":"sail barge","numberOfPassengers":"500","favorite":false}];
 
+const mockFavorites = [
+{"homeworld":"Tatooine","homeworldPop":"200000","name":"Luke Skywalker","species":["Human"],"favorite":true}, {"name":"Alderaan","terrain":"grasslands, mountains","population":"2000000000","climate":"temperate","residents":["Leia Organa","Bail Prestor Organa","Raymus Antilles"],"favorite":true}, {"name":"Sand Crawler","model":"Digger Crawler","vehicleClass":"wheeled","numberOfPassengers":"30","favorite":true}
+]
 
 export {
   peopleReturn,
   planetsReturn,
-  vehiclesReturn
+  vehiclesReturn,
+  mockFavorites
 }

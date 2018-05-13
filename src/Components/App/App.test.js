@@ -3,7 +3,11 @@ import { shallow, mount } from 'enzyme';
 import App from './App';
 import ApiHelper from '../../Api.js';
 const apiHelper = new ApiHelper();
-import { peopleReturn, planetsReturn, vehiclesReturn } from '../../mockdata/swapi-return-data.js';
+import { 
+  peopleReturn, 
+  planetsReturn, 
+  vehiclesReturn, 
+  mockFavorites } from '../../mockdata/swapi-return-data.js';
 
 jest.mock('../../Api.js', () => {
   return jest.fn().mockImplementation(() => {
@@ -243,7 +247,7 @@ describe('App', () => {
   })
 
   it('matches the snapshot if Favorites has been selected', () => {
-    app.setState({ favorites: peopleReturn, selectedButton: 'Favorites' });
+    app.setState({ favorites: mockFavorites, selectedButton: 'Favorites' });
 
     expect(app).toMatchSnapshot();
   })

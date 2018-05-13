@@ -4,11 +4,11 @@ const Loading = () => {
   return (
     <div className="loading">
       <img 
-        src={ require('../../images/tie-fighter-2.gif') }
+        src={ require('../../images/tie-fighter-yellow.png') }
         alt="Loading. Please wait."
       />
     </div>
-  )
-}
+  );
+};
 
 export default Loading;

@@ -17,13 +17,22 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item2={ `Population: ${homeworldPop}` }
           item3={ `Species: ${species.join(', ')}` }
           favorite={ favorite }
+          section='People'
           toggleFavorite={ toggleFavorite }
           key={ id }
         />
-      )
+      );
 
     } else if (card.id.includes('planets')) {
-      const { id, favorite, name, population, climate, terrain, residents } = card;
+      const { 
+        id, 
+        favorite, 
+        name, 
+        population, 
+        climate, 
+        terrain, 
+        residents 
+      } = card;
 
       dataCard = (
         <Card
@@ -34,13 +43,21 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item3={ `Terrain: ${terrain}` }
           item4={ `Residents: ${residents.join(', ')}` }
           favorite={ favorite }
+          section='Planets'
           toggleFavorite={ toggleFavorite }
           key={ id }
         />
-      )
+      );
 
     } else if (card.id.includes('vehicles')) {
-      const { id, favorite, name, vehicleClass, model, numberOfPassengers } = card;
+      const { 
+        id, 
+        favorite, 
+        name, 
+        vehicleClass, 
+        model, 
+        numberOfPassengers 
+      } = card;
 
       dataCard = (
         <Card
@@ -50,26 +67,26 @@ const Favorites = ({ cardData, toggleFavorite }) => {
           item2={ `Model: ${model}` }
           item3={ `Total Passengers: ${numberOfPassengers}` }
           favorite={ favorite }
+          section='Vehicles'
           toggleFavorite={ toggleFavorite }
           key={ id }
         />
-      )
-
+      );
     }
 
     return dataCard;
+  });
 
-  })
-   return (
-      <div className="card-container Favorites">
-        { favoriteCards }
-      </div>
-    );
-}
+  return (
+    <div className="card-container Favorites">
+      { favoriteCards }
+    </div>
+  );
+};
 
 Favorites.propTypes = {
   cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
   toggleFavorite: PropTypes.func.isRequired
-}
+};
 
 export default Favorites;

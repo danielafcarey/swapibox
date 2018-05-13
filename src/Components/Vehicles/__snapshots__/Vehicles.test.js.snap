@@ -46,6 +46,7 @@ ShallowWrapper {
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
+          section="Vehicles"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -55,6 +56,7 @@ ShallowWrapper {
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
+          section="Vehicles"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -73,6 +75,7 @@ ShallowWrapper {
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
+          "section": "Vehicles",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -90,6 +93,7 @@ ShallowWrapper {
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
+          "section": "Vehicles",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -113,6 +117,7 @@ ShallowWrapper {
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
+            section="Vehicles"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -122,6 +127,7 @@ ShallowWrapper {
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
+            section="Vehicles"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -140,6 +146,7 @@ ShallowWrapper {
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
+            "section": "Vehicles",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -157,6 +164,7 @@ ShallowWrapper {
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
+            "section": "Vehicles",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -216,6 +224,7 @@ ShallowWrapper {
           item1="Class: car"
           item2="Model: cool"
           item3="Total Passengers: 1"
+          section="Vehicles"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -234,6 +243,7 @@ ShallowWrapper {
           "item1": "Class: car",
           "item2": "Model: cool",
           "item3": "Total Passengers: 1",
+          "section": "Vehicles",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -257,6 +267,7 @@ ShallowWrapper {
             item1="Class: car"
             item2="Model: cool"
             item3="Total Passengers: 1"
+            section="Vehicles"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -275,6 +286,7 @@ ShallowWrapper {
             "item1": "Class: car",
             "item2": "Model: cool",
             "item3": "Total Passengers: 1",
+            "section": "Vehicles",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },

@@ -11,6 +11,7 @@ ShallowWrapper {
     item2="item2"
     item3="item3"
     item4="item4"
+    section="People"
     title="is a card"
     toggleFavorite={[Function]}
 />,
@@ -65,7 +66,7 @@ ShallowWrapper {
           </h4>
 </div>,
       ],
-      "className": "Card",
+      "className": "Card People",
     },
     "ref": null,
     "rendered": Array [
@@ -237,7 +238,7 @@ ShallowWrapper {
             </h4>
 </div>,
         ],
-        "className": "Card",
+        "className": "Card People",
       },
       "ref": null,
       "rendered": Array [
@@ -386,6 +387,7 @@ ShallowWrapper {
     item2="item2"
     item3="item3"
     item4="item4"
+    section="People"
     title="is a card"
     toggleFavorite={[Function]}
 />,
@@ -440,7 +442,7 @@ ShallowWrapper {
           </h4>
 </div>,
       ],
-      "className": "Card",
+      "className": "Card People",
     },
     "ref": null,
     "rendered": Array [
@@ -612,7 +614,7 @@ ShallowWrapper {
             </h4>
 </div>,
         ],
-        "className": "Card",
+        "className": "Card People",
       },
       "ref": null,
       "rendered": Array [

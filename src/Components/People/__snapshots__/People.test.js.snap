@@ -50,6 +50,7 @@ ShallowWrapper {
           item1="Homeworld: Earth"
           item2="Population: 7000000000"
           item3="Species: pupper"
+          section="People"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -59,6 +60,7 @@ ShallowWrapper {
           item1="Homeworld: Earth"
           item2="Population: 7000000000"
           item3="Species: pupper"
+          section="People"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -77,6 +79,7 @@ ShallowWrapper {
           "item1": "Homeworld: Earth",
           "item2": "Population: 7000000000",
           "item3": "Species: pupper",
+          "section": "People",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -94,6 +97,7 @@ ShallowWrapper {
           "item1": "Homeworld: Earth",
           "item2": "Population: 7000000000",
           "item3": "Species: pupper",
+          "section": "People",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -117,6 +121,7 @@ ShallowWrapper {
             item1="Homeworld: Earth"
             item2="Population: 7000000000"
             item3="Species: pupper"
+            section="People"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -126,6 +131,7 @@ ShallowWrapper {
             item1="Homeworld: Earth"
             item2="Population: 7000000000"
             item3="Species: pupper"
+            section="People"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -144,6 +150,7 @@ ShallowWrapper {
             "item1": "Homeworld: Earth",
             "item2": "Population: 7000000000",
             "item3": "Species: pupper",
+            "section": "People",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -161,6 +168,7 @@ ShallowWrapper {
             "item1": "Homeworld: Earth",
             "item2": "Population: 7000000000",
             "item3": "Species: pupper",
+            "section": "People",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },
@@ -222,6 +230,7 @@ ShallowWrapper {
           item1="Homeworld: Earth"
           item2="Population: 7000000000"
           item3="Species: pupper"
+          section="People"
           title="Daniela"
           toggleFavorite={[Function]}
 />,
@@ -240,6 +249,7 @@ ShallowWrapper {
           "item1": "Homeworld: Earth",
           "item2": "Population: 7000000000",
           "item3": "Species: pupper",
+          "section": "People",
           "title": "Daniela",
           "toggleFavorite": [Function],
         },
@@ -263,6 +273,7 @@ ShallowWrapper {
             item1="Homeworld: Earth"
             item2="Population: 7000000000"
             item3="Species: pupper"
+            section="People"
             title="Daniela"
             toggleFavorite={[Function]}
 />,
@@ -281,6 +292,7 @@ ShallowWrapper {
             "item1": "Homeworld: Earth",
             "item2": "Population: 7000000000",
             "item3": "Species: pupper",
+            "section": "People",
             "title": "Daniela",
             "toggleFavorite": [Function],
           },

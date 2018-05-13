@@ -14,7 +14,7 @@ const Landing = ({ crawlData }) => {
       </div>
     </div>
   );
-}
+};
 
 Landing.propTypes = {
   crawlData: PropTypes.shape({
@@ -22,6 +22,6 @@ Landing.propTypes = {
     releaseDate: PropTypes.string,
     crawlText: PropTypes.string
   })
-}
+};
 
 export default Landing;

@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-
 const Card = (props) => {
   const {
     id,
@@ -11,18 +10,19 @@ const Card = (props) => {
     item3,
     item4,
     favorite,
+    section,
     toggleFavorite
   } = props;
 
   let imgSrc;
   if (favorite) {
-    imgSrc = require('../../images/lightsaber-red.png')
+    imgSrc = require('../../images/lightsaber-red.png');
   } else {
-    imgSrc = require('../../images/lightsaber-white.png')
+    imgSrc = require('../../images/lightsaber-white.png');
   }
 
   return (
-    <div className="Card">
+    <div className={`Card ${section}`}>
       <h3 className="title">{ title }</h3>
       <button 
         onClick={ () => toggleFavorite(id) }
@@ -39,9 +39,8 @@ const Card = (props) => {
         <h4 className="item4">{ item4 }</h4>
       </div>
     </div>
-
-  )
-}
+  );
+};
 
 Card.propTypes = {
   id: PropTypes.string.isRequired,
@@ -51,7 +50,8 @@ Card.propTypes = {
   item3: PropTypes.string.isRequired,
   item4: PropTypes.string,
   favorite: PropTypes.bool.isRequired,
+  section: PropTypes.string.isRequired,
   toggleFavorite: PropTypes.func.isRequired
-}
+};
 
 export default Card;

@@ -5,7 +5,15 @@ import Card from '../Card/Card.js';
 
 const Planets = ({ cardData, toggleFavorite }) => {
   const planetsCards = cardData.map(card => {
-    const { id, favorite, name, population, climate, terrain, residents } = card;
+    const { 
+      id, 
+      favorite, 
+      name, 
+      population, 
+      climate, 
+      terrain, 
+      residents 
+    } = card;
 
     return (
       <Card
@@ -16,23 +24,24 @@ const Planets = ({ cardData, toggleFavorite }) => {
         item3={ `Terrain: ${terrain}` }
         item4={ `Residents: ${residents.join(', ')}` }
         favorite={ favorite }
+        section='Planets'
         toggleFavorite={ toggleFavorite }
         key={ id }
       />
-    )
-  })
+    );
+  });
 
   return (
     <div className="card-container Planets">
       { planetsCards } 
     </div>
   );
-}
+};
 
 Planets.propTypes = {
   cardData: PropTypes.arrayOf(PropTypes.object).isRequired,
   toggleFavorite: PropTypes.func.isRequired
-}
+};
 
 
 export default Planets;

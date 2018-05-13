@@ -21,13 +21,13 @@ class App extends Component {
       crawlData: {},
       favorites:  [],
       loading: false
-    }
+    };
   }
 
   componentDidMount = async () => {
     const crawlData = await apiHelper.getCrawlData();
 
-    this.setState({ crawlData })
+    this.setState({ crawlData });
   }
 
   changeCategory = async (event) => {
@@ -41,7 +41,7 @@ class App extends Component {
     } else if (buttonName === 'Vehicles') {
       await this.getVehiclesData();
     } else if (buttonName === 'Favorites') {
-      this.setState({ loading: false })
+      this.setState({ loading: false });
       await this.getCardsDisplay();
     }
 
@@ -74,7 +74,7 @@ class App extends Component {
   toggleFavorite = (cardId) => {
     const newSelectedData = this.state.selectedData.map(card => {
       if (cardId === card.id) {
-        card.favorite = !card.favorite
+        card.favorite = !card.favorite;
       }
 
       return card;
@@ -83,7 +83,7 @@ class App extends Component {
     this.setState(
       { selectedData: newSelectedData }, 
       () => this.updateFavoritesInState(cardId) 
-    )
+    );
   }
 
   updateFavoritesInState = (cardId) => {
@@ -97,7 +97,7 @@ class App extends Component {
     }
 
     if (selectedCard.favorite) {
-      this.setState({ favorites: [...this.state.favorites, selectedCard ] });
+      this.setState({ favorites: [...this.state.favorites, selectedCard] });
     } else {
       this.removeFromFavorites(cardId);
     }
@@ -110,7 +110,7 @@ class App extends Component {
       }
       
       return data;
-    }) 
+    }); 
 
     this.changeDataState(newSelectedData);
   }

@@ -13,6 +13,7 @@ describe('Card', () => {
       item2: 'item2',
       item3: 'item3',
       item4: 'item4',
+      section: 'People',
       favorite: false,
       toggleFavorite: jest.fn()
     }
