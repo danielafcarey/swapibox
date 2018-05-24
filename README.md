@@ -19,5 +19,5 @@ SWAPI Box uses the Star Wars API to display information about the people, planet
 
 Daniela Carey
 
-_(**Turing School of Software & Design Front-end Engineering project - Mod 3:** [Headcount 2.0 Project Spec](https://github.com/turingschool-examples/headcount2.0))_ 
+_(**Turing School of Software & Design Front-end Engineering project - Mod 3:** [SWAPI Box Project Spec](http://frontend.turing.io/projects/swapi-box.html))_ 
 
